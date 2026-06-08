@@ -1,7 +1,8 @@
-<<<<<<< HEAD
 # 🌍 TravelSphere Platform
 
-Enterprise Travel Booking & Insurance Platform — 17 Java Spring Boot Microservices + Angular PWA + Agentic AI
+Enterprise Travel Booking & Insurance Platform — 18 Java Spring Boot Microservices + Angular PWA + Agentic AI
+
+[![GitHub](https://img.shields.io/badge/GitHub-Anilg1997%2Fai--travelsphere--platform-blue?logo=github)](https://github.com/Anilg1997/ai-travelsphere-platform)
 
 ## Architecture
 
@@ -21,7 +22,7 @@ Enterprise Travel Booking & Insurance Platform — 17 Java Spring Boot Microserv
 │ JWT+   │ │      │ │      │ │     │ │8086 │ │8087 │ │        │
 │ Redis  │ │      │ │      │ │     │ │     │ │     │ │        │
 └────────┘ └──────┘ └──────┘ └─────┘ └─────┘ └─────┘ └────────┘
-   ... and 10 more microservices ...
+   ... and 11 more microservices ...
 ┌─────────────────────────────────────────────────────────────┐
 │                    Message Broker (Kafka)                    │
 └─────────────────────────────────────────────────────────────┘
@@ -52,76 +53,94 @@ Enterprise Travel Booking & Insurance Platform — 17 Java Spring Boot Microserv
 | **Monitoring** | Zipkin, Prometheus, Grafana, Kafka UI |
 | **Docs** | SpringDoc OpenAPI (Swagger UI) |
 
-## Microservices (17)
+## Project Structure
 
-| # | Service | Port | Description |
-|---|---------|------|-------------|
-| 1 | **api-gateway** | 8080 | Spring Cloud Gateway, JWT filter, rate limiting |
-| 2 | **service-registry** | 8761 | Netflix Eureka service discovery |
-| 3 | **config-server** | 8888 | Spring Cloud Config (Git-backed) |
-| 4 | **auth-service** | 8081 | JWT auth, register, login, refresh, Redis tokens |
-| 5 | **user-service** | 8082 | Profiles, loyalty points, referrals |
-| 6 | **flight-service** | 8083 | Flight search, booking, check-in, seat maps |
-| 7 | **hotel-service** | 8084 | Hotel search, rooms, reviews, photos (S3) |
-| 8 | **transport-service** | 8085 | Bus/train routes, schedules, PNR |
-| 9 | **car-rental-service** | 8086 | Vehicle inventory, add-ons, bookings |
-| 10 | **insurance-service** | 8087 | Policy engine, premium calc, claims, PDF |
-| 11 | **package-service** | 8088 | Holiday packages, itineraries, group booking |
-| 12 | **payment-service** | 8089 | Mock gateway, wallet, promo codes, refunds |
-| 13 | **notification-service** | 8091 | Email (Thymeleaf), SMS, WebSocket push |
-| 14 | **document-service** | 8092 | PDF generation (iText7), S3 upload/download |
-| 15 | **search-service** | 8093 | Full-text search across all domains |
-| 16 | **ai-agent-service** | 8094 | Ollama + LangChain4j + MCP + RAG |
-| 17 | **admin-service** | 8095 | Inventory, analytics, fraud alerts, support |
+```
+travelsphere-platform/
+├── backend/                    # 18 Java Spring Boot microservices
+│   ├── service-registry/       # Netflix Eureka (port 8761)
+│   ├── config-server/          # Spring Cloud Config (port 8888)
+│   ├── api-gateway/            # Spring Cloud Gateway (port 8080)
+│   ├── auth-service/           # JWT auth (port 8081)
+│   ├── user-service/           # User profiles (port 8082)
+│   ├── flight-service/         # Flight booking (port 8083)
+│   ├── hotel-service/          # Hotel booking (port 8084)
+│   ├── transport-service/      # Bus/train (port 8085)
+│   ├── car-rental-service/     # Car rental (port 8086)
+│   ├── insurance-service/      # Insurance (port 8087)
+│   ├── package-service/        # Holiday packages (port 8088)
+│   ├── payment-service/        # Payments (port 8089)
+│   ├── notification-service/   # Email/SMS (port 8091)
+│   ├── document-service/       # PDF generation (port 8092)
+│   ├── search-service/         # Full-text search (port 8093)
+│   ├── ai-agent-service/       # AI agent (port 8094)
+│   ├── admin-service/          # Admin panel (port 8095)
+│   └── common-lib/             # Shared library
+├── frontend/
+│   └── travelsphere-ui/        # Angular PWA app
+├── config-repo/                # Spring Cloud Config files
+├── infra/                      # Docker/infra configs
+├── .env                        # Local environment variables
+├── docker-compose.yml          # All services orchestration
+└── pom.xml                     # Root Maven POM
+```
 
 ## Quick Start (Local)
 
 ### Prerequisites
 - Docker 24+ & Docker Compose v2
-- Java 17 (Temurin)
+- Java 17 or 21 (Temurin JDK)
 - Maven 3.9+
 - Node.js 20+
 - Ollama (for AI features)
 
-### Step 1: Start Infrastructure
+### Step 1: Configure Environment
+```bash
+# Copy the .env file (already provided with local defaults)
+cp .env.example .env
+```
+
+### Step 2: Start Infrastructure
 ```bash
 docker compose up -d postgres redis kafka zookeeper qdrant localstack zipkin prometheus grafana kafka-ui mailhog
 ```
 
-### Step 2: Pull Ollama Models
+### Step 3: Pull Ollama Models
 ```bash
 ollama pull llama3.2
 ollama pull nomic-embed-text
 ```
 
-### Step 3: Build All Services
+### Step 4: Build All Services
 ```bash
+# Make sure JAVA_HOME points to JDK 17 or 21
+export JAVA_HOME=/path/to/jdk-21
 mvn clean package -DskipTests
 ```
 
-### Step 4: Start Core Services
+### Step 5: Start Core Services
 ```bash
 docker compose up -d service-registry config-server
 sleep 30
 docker compose up -d api-gateway auth-service user-service
 ```
 
-### Step 5: Start Domain Services
+### Step 6: Start Domain Services
 ```bash
 docker compose up -d flight-service hotel-service transport-service car-rental-service insurance-service package-service payment-service
 ```
 
-### Step 6: Start Support Services
+### Step 7: Start Support Services
 ```bash
 docker compose up -d notification-service document-service search-service admin-service
 ```
 
-### Step 7: Start AI Service
+### Step 8: Start AI Service
 ```bash
 docker compose up -d ai-agent-service
 ```
 
-### Step 8: Start Angular Frontend
+### Step 9: Start Angular Frontend
 ```bash
 cd frontend/travelsphere-ui
 npm ci
@@ -206,6 +225,10 @@ curl -X POST http://localhost:8080/api/v1/ai/insurance-advisor \
 
 ## AWS Deployment
 
+> **Note:** You'll need an AWS account for deployment. Set up these GitHub Secrets when ready:
+> - `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`, `AWS_REGION`
+> - `EC2_HOST`, `EC2_USERNAME`, `EC2_SSH_KEY`
+
 1. Create EC2 t2.micro with Amazon Linux 2
 2. Assign Elastic IP
 3. Set up RDS PostgreSQL db.t3.micro
@@ -226,6 +249,3 @@ curl -X POST http://localhost:8080/api/v1/ai/insurance-advisor \
 ## License
 
 Proprietary — TravelSphere Platform
-=======
-# ai-travelsphere-platform
->>>>>>> eefa307712e1ccaa272d6e81dc815a0ddaf161ec
