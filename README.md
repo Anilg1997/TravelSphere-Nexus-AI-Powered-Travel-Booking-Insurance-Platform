@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🌍 TravelSphere Platform
 
 Enterprise Travel Booking & Insurance Platform — 17 Java Spring Boot Microservices + Angular PWA + Agentic AI
@@ -225,3 +226,6 @@ curl -X POST http://localhost:8080/api/v1/ai/insurance-advisor \
 ## License
 
 Proprietary — TravelSphere Platform
+=======
+# ai-travelsphere-platform
+>>>>>>> eefa307712e1ccaa272d6e81dc815a0ddaf161ec
