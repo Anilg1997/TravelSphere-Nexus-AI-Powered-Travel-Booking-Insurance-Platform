@@ -9,14 +9,14 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatSnackBarModule, MatSnackBar } from '@angular/material/snack-bar';
-import { NgIf } from '@angular/common';
+import { NgFor, NgIf } from '@angular/common';
 import { InsuranceService } from '../../../services/insurance.service';
 import { PolicyType } from '../../../models/insurance.model';
 
 @Component({
   selector: 'app-insurance-purchase',
   standalone: true,
-  imports: [RouterLink, ReactiveFormsModule, MatCardModule, MatButtonModule, MatIconModule, MatInputModule, MatFormFieldModule, MatSelectModule, MatProgressSpinnerModule, MatSnackBarModule, NgIf],
+  imports: [RouterLink, ReactiveFormsModule, MatCardModule, MatButtonModule, MatIconModule, MatInputModule, MatFormFieldModule, MatSelectModule, MatProgressSpinnerModule, MatSnackBarModule, NgFor, NgIf],
   template: `
     <div class="page-container">
       <a routerLink="/insurance" mat-button><mat-icon>arrow_back</mat-icon> Back</a>

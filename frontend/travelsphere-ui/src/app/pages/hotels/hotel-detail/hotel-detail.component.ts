@@ -6,14 +6,14 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatChipsModule } from '@angular/material/chips';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatDividerModule } from '@angular/material/divider';
-import { NgIf, CurrencyPipe, SlicePipe, DecimalPipe, DatePipe } from '@angular/common';
+import { NgIf, NgFor, CurrencyPipe, SlicePipe, DecimalPipe, DatePipe } from '@angular/common';
 import { HotelService } from '../../../services/hotel.service';
 import { Hotel, ReviewResponse } from '../../../models/hotel.model';
 
 @Component({
   selector: 'app-hotel-detail',
   standalone: true,
-  imports: [RouterLink, MatCardModule, MatButtonModule, MatIconModule, MatChipsModule, MatProgressSpinnerModule, MatDividerModule, NgIf, CurrencyPipe, SlicePipe, DecimalPipe, DatePipe],
+  imports: [RouterLink, MatCardModule, MatButtonModule, MatIconModule, MatChipsModule, MatProgressSpinnerModule, MatDividerModule, NgIf, NgFor, CurrencyPipe, SlicePipe, DecimalPipe, DatePipe],
   template: `
     <div class="page-container">
       <div *ngIf="loading" style="text-align:center;padding:60px"><mat-spinner diameter="40" style="margin:0 auto"></mat-spinner></div>
