@@ -18,7 +18,7 @@
 
     <name>TravelSphere Platform</name>
     <description>Enterprise Travel Booking &amp; Insurance Platform — Java Spring Boot Microservices + Angular + Agentic AI</description>
-    <url>https://github.com/travelsphere/travelsphere-platform</url>
+    <url>https://github.com/Anilg1997/ai-travelsphere-platform</url>
 
     <modules>
         <module>backend/service-registry</module>
