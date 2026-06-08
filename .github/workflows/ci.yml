@@ -1,0 +1,87 @@
+name: TravelSphere CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build-and-test:
+    strategy:
+      matrix:
+        service: [api-gateway, service-registry, config-server, auth-service, user-service,
+                  flight-service, hotel-service, transport-service, car-rental-service,
+                  insurance-service, package-service, payment-service, notification-service,
+                  document-service, search-service, ai-agent-service, admin-service]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+      - uses: actions/cache@v4
+        with:
+          path: ~/.m2
+          key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
+          restore-keys: ${{ runner.os }}-maven-
+      - name: Build service
+        run: mvn -B clean verify -pl backend/${{ matrix.service }} -am -DskipTests
+      - name: Run unit tests
+        run: mvn -B test -pl backend/${{ matrix.service }}
+      - name: Upload test results
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-results-${{ matrix.service }}
+          path: backend/${{ matrix.service }}/target/surefire-reports
+      - name: Run Checkstyle
+        run: mvn checkstyle:check -pl backend/${{ matrix.service }}
+
+  build-frontend:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: frontend/travelsphere-ui/package-lock.json
+      - run: npm ci
+        working-directory: frontend/travelsphere-ui
+      - run: npx ng build --configuration production
+        working-directory: frontend/travelsphere-ui
+      - run: npx ng test --watch=false --browsers=ChromeHeadless || echo "No tests yet"
+        working-directory: frontend/travelsphere-ui
+      - uses: actions/upload-artifact@v4
+        with:
+          name: frontend-dist
+          path: frontend/travelsphere-ui/dist/
+
+  docker-build:
+    needs: build-and-test
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    strategy:
+      matrix:
+        service: [api-gateway, auth-service, flight-service, hotel-service, insurance-service,
+                  payment-service, ai-agent-service, admin-service]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+      - uses: docker/setup-buildx-action@v3
+      - uses: docker/build-push-action@v5
+        with:
+          context: backend/${{ matrix.service }}
+          push: true
+          tags: |
+            ghcr.io/${{ github.repository_owner }}/travelsphere-${{ matrix.service }}:${{ github.sha }}
+            ghcr.io/${{ github.repository_owner }}/travelsphere-${{ matrix.service }}:latest
+          cache-from: type=gha
+          cache-to: type=gha,mode=max

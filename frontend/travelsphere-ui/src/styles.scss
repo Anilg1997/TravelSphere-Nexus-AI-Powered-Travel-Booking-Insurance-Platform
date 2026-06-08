@@ -1,0 +1,316 @@
+/* ==========================================================================
+   TravelSphere — Global Styles
+   ========================================================================== */
+
+:root {
+  --primary: #3f51b5;
+  --primary-light: #757de8;
+  --primary-dark: #002984;
+  --accent: #ff4081;
+  --warn: #f44336;
+  --success: #4caf50;
+  --bg-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --card-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  --card-hover-shadow: 0 8px 24px rgba(0,0,0,0.12);
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #f5f7fa;
+  color: #1a1a2e;
+  scroll-behavior: smooth;
+}
+
+/* ── Scrollbar ─────────────────────────────────────────── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #c4c4c4; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #a0a0a0; }
+
+/* ── Page Transitions ──────────────────────────────────── */
+.page-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 24px;
+  animation: fadeSlideUp 0.4s ease-out;
+}
+
+@keyframes fadeSlideUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Hero Section ──────────────────────────────────────── */
+.hero-section {
+  background: var(--bg-gradient);
+  color: white;
+  padding: 80px 24px 60px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+  animation: heroPulse 8s ease-in-out infinite;
+}
+
+@keyframes heroPulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin: 0 0 12px;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  margin: 0 0 32px;
+  position: relative;
+  z-index: 1;
+}
+
+/* ── Cards ─────────────────────────────────────────────── */
+.mat-mdc-card {
+  border-radius: 16px !important;
+  box-shadow: var(--card-shadow) !important;
+  transition: var(--transition);
+  overflow: hidden;
+}
+
+.mat-mdc-card:hover {
+  box-shadow: var(--card-hover-shadow) !important;
+  transform: translateY(-2px);
+}
+
+.feature-card {
+  cursor: pointer;
+  height: 100%;
+}
+
+.feature-card .mat-mdc-card-header {
+  padding: 24px 24px 0;
+}
+
+.feature-card .card-icon {
+  font-size: 48px;
+  width: 48px;
+  height: 48px;
+  margin-bottom: 16px;
+  color: var(--primary);
+}
+
+/* ── Search Bar ────────────────────────────────────────── */
+.search-bar {
+  background: white;
+  border-radius: 50px;
+  padding: 8px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  max-width: 700px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.search-bar .mat-mdc-form-field {
+  flex: 1;
+}
+
+.search-bar .mat-mdc-form-field-subscript-wrapper {
+  display: none;
+}
+
+/* ── Buttons ───────────────────────────────────────────── */
+.cta-button {
+  height: 48px !important;
+  border-radius: 24px !important;
+  font-weight: 600 !important;
+  font-size: 1rem !important;
+  padding: 0 32px !important;
+  transition: var(--transition) !important;
+}
+
+.cta-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(63, 81, 181, 0.4);
+}
+
+/* ── Stats Grid ────────────────────────────────────────── */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 24px;
+  margin: 48px 0;
+}
+
+.stat-card {
+  text-align: center;
+  padding: 32px 16px;
+}
+
+.stat-card .stat-value {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--primary);
+}
+
+.stat-card .stat-label {
+  color: #666;
+  margin-top: 8px;
+}
+
+/* ── Grid ──────────────────────────────────────────────── */
+.responsive-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+/* ── Form Sections ─────────────────────────────────────── */
+.form-section {
+  background: white;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: var(--card-shadow);
+  margin-bottom: 24px;
+}
+
+.form-section h2 {
+  margin: 0 0 24px;
+  font-weight: 600;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.form-row-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+}
+
+@media (max-width: 768px) {
+  .form-row, .form-row-3 { grid-template-columns: 1fr; }
+  .hero-section h1 { font-size: 2rem; }
+  .hero-section { padding: 60px 16px 40px; }
+  .page-container { padding: 16px; }
+  .stats-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* ── Status Badges ─────────────────────────────────────── */
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.status-badge.confirmed { background: #e8f5e9; color: #2e7d32; }
+.status-badge.pending { background: #fff3e0; color: #e65100; }
+.status-badge.cancelled { background: #fce4ec; color: #c62828; }
+.status-badge.completed { background: #e3f2fd; color: #1565c0; }
+
+/* ── Skeleton Loading ──────────────────────────────────── */
+.skeleton {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: 8px;
+}
+
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* ── Section Titles ────────────────────────────────────── */
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 0 4px;
+}
+
+.section-subtitle {
+  color: #666;
+  margin: 0 0 24px;
+}
+
+/* ── Empty State ───────────────────────────────────────── */
+.empty-state {
+  text-align: center;
+  padding: 60px 24px;
+  color: #999;
+}
+
+.empty-state mat-icon {
+  font-size: 64px;
+  width: 64px;
+  height: 64px;
+  margin-bottom: 16px;
+}
+
+/* ── Auth Pages ────────────────────────────────────────── */
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-gradient);
+  padding: 24px;
+}
+
+.auth-card {
+  background: white;
+  border-radius: 24px;
+  padding: 48px 40px;
+  width: 100%;
+  max-width: 440px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+}
+
+.auth-card .auth-logo {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.auth-card .auth-logo h1 {
+  font-weight: 800;
+  color: var(--primary);
+  margin: 0;
+}
+
+.auth-card .auth-logo p {
+  color: #666;
+  margin: 4px 0 0;
+}
+
+.auth-card .full-width {
+  width: 100%;
+  margin-bottom: 16px;
+}

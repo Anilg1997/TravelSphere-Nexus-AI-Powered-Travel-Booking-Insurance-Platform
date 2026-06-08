@@ -1,0 +1,24 @@
+server:
+  port: 8085
+
+spring:
+  application:
+    name: transport-service
+  datasource:
+    url: jdbc:postgresql://${POSTGRES_HOST:localhost}:5432/${POSTGRES_DB:travelsphere}?currentSchema=transport_schema
+    username: ${POSTGRES_USER:travelsphere}
+    password: ${POSTGRES_PASSWORD:TravelSphere@2024}
+  jpa:
+    properties:
+      hibernate:
+        default_schema: transport_schema
+  flyway:
+    schemas: transport_schema
+  kafka:
+    producer:
+      bootstrap-servers: ${KAFKA_BOOTSTRAP_SERVERS:localhost:9092}
+    consumer:
+      bootstrap-servers: ${KAFKA_BOOTSTRAP_SERVERS:localhost:9092}
+      group-id: transport-service-group
+    topic:
+      transport-booked: ts.transport.booked

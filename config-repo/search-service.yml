@@ -1,0 +1,27 @@
+server:
+  port: 8093
+
+spring:
+  application:
+    name: search-service
+  datasource:
+    url: jdbc:postgresql://${POSTGRES_HOST:localhost}:5432/${POSTGRES_DB:travelsphere}?currentSchema=search_schema
+    username: ${POSTGRES_USER:travelsphere}
+    password: ${POSTGRES_PASSWORD:TravelSphere@2024}
+  jpa:
+    properties:
+      hibernate:
+        default_schema: search_schema
+  flyway:
+    schemas: search_schema
+  data:
+    redis:
+      host: ${REDIS_HOST:localhost}
+      port: 6379
+      password: ${REDIS_PASSWORD:Redis@2024}
+  kafka:
+    consumer:
+      bootstrap-servers: ${KAFKA_BOOTSTRAP_SERVERS:localhost:9092}
+      group-id: search-service-group
+    topic:
+      indexed: ts.search.indexed

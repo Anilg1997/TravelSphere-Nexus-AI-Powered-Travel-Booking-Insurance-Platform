@@ -1,0 +1,30 @@
+server:
+  port: 8084
+
+spring:
+  application:
+    name: hotel-service
+  datasource:
+    url: jdbc:postgresql://${POSTGRES_HOST:localhost}:5432/${POSTGRES_DB:travelsphere}?currentSchema=hotel_schema
+    username: ${POSTGRES_USER:travelsphere}
+    password: ${POSTGRES_PASSWORD:TravelSphere@2024}
+  jpa:
+    properties:
+      hibernate:
+        default_schema: hotel_schema
+  flyway:
+    schemas: hotel_schema
+  kafka:
+    producer:
+      bootstrap-servers: ${KAFKA_BOOTSTRAP_SERVERS:localhost:9092}
+    consumer:
+      bootstrap-servers: ${KAFKA_BOOTSTRAP_SERVERS:localhost:9092}
+      group-id: hotel-service-group
+    topic:
+      hotel-booked: ts.hotels.booked
+      hotel-cancelled: ts.hotels.cancelled
+
+app:
+  s3:
+    endpoint: ${S3_ENDPOINT:http://localhost:4566}
+    bucket-photos: ${S3_BUCKET_PHOTOS:travelsphere-photos}

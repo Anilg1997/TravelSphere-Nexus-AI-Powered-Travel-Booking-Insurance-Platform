@@ -1,0 +1,29 @@
+server:
+  port: 8095
+
+spring:
+  application:
+    name: admin-service
+  datasource:
+    url: jdbc:postgresql://${POSTGRES_HOST:localhost}:5432/${POSTGRES_DB:travelsphere}?currentSchema=admin_schema
+    username: ${POSTGRES_USER:travelsphere}
+    password: ${POSTGRES_PASSWORD:TravelSphere@2024}
+  jpa:
+    properties:
+      hibernate:
+        default_schema: admin_schema
+  flyway:
+    schemas: admin_schema
+  data:
+    redis:
+      host: ${REDIS_HOST:localhost}
+      port: 6379
+      password: ${REDIS_PASSWORD:Redis@2024}
+  kafka:
+    producer:
+      bootstrap-servers: ${KAFKA_BOOTSTRAP_SERVERS:localhost:9092}
+    consumer:
+      bootstrap-servers: ${KAFKA_BOOTSTRAP_SERVERS:localhost:9092}
+      group-id: admin-service-group
+    topic:
+      fraud-alert: ts.admin.fraud-alert

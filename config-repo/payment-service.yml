@@ -1,0 +1,31 @@
+server:
+  port: 8089
+
+spring:
+  application:
+    name: payment-service
+  datasource:
+    url: jdbc:postgresql://${POSTGRES_HOST:localhost}:5432/${POSTGRES_DB:travelsphere}?currentSchema=payment_schema
+    username: ${POSTGRES_USER:travelsphere}
+    password: ${POSTGRES_PASSWORD:TravelSphere@2024}
+  jpa:
+    properties:
+      hibernate:
+        default_schema: payment_schema
+  flyway:
+    schemas: payment_schema
+  data:
+    redis:
+      host: ${REDIS_HOST:localhost}
+      port: 6379
+      password: ${REDIS_PASSWORD:Redis@2024}
+  kafka:
+    producer:
+      bootstrap-servers: ${KAFKA_BOOTSTRAP_SERVERS:localhost:9092}
+    consumer:
+      bootstrap-servers: ${KAFKA_BOOTSTRAP_SERVERS:localhost:9092}
+      group-id: payment-service-group
+    topic:
+      payment-processed: ts.payments.processed
+      payment-failed: ts.payments.failed
+      payment-refunded: ts.payments.refunded

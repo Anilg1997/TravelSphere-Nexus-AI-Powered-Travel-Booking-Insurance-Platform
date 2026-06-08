@@ -1,0 +1,31 @@
+server:
+  port: 8087
+
+spring:
+  application:
+    name: insurance-service
+  datasource:
+    url: jdbc:postgresql://${POSTGRES_HOST:localhost}:5432/${POSTGRES_DB:travelsphere}?currentSchema=insurance_schema
+    username: ${POSTGRES_USER:travelsphere}
+    password: ${POSTGRES_PASSWORD:TravelSphere@2024}
+  jpa:
+    properties:
+      hibernate:
+        default_schema: insurance_schema
+  flyway:
+    schemas: insurance_schema
+  kafka:
+    producer:
+      bootstrap-servers: ${KAFKA_BOOTSTRAP_SERVERS:localhost:9092}
+    consumer:
+      bootstrap-servers: ${KAFKA_BOOTSTRAP_SERVERS:localhost:9092}
+      group-id: insurance-service-group
+    topic:
+      policy-issued: ts.insurance.policy-issued
+      claim-filed: ts.insurance.claim-filed
+      claim-resolved: ts.insurance.claim-resolved
+
+app:
+  s3:
+    endpoint: ${S3_ENDPOINT:http://localhost:4566}
+    bucket-documents: ${S3_BUCKET_DOCUMENTS:travelsphere-documents}

@@ -1,0 +1,79 @@
+# Java
+*.class
+*.jar
+*.war
+target/
+!.mvn/wrapper/maven-wrapper.jar
+
+# Maven
+.log
+*.log*
+*.tmp
+*.swp
+*.swo
+~$*
+
+# Eclipse
+.project
+.classpath
+.settings/
+bin/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+.idea_modules/
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# NetBeans
+nbproject/
+nb-configuration.xml
+
+# Angular / Node
+frontend/travelsphere-ui/node_modules/
+frontend/travelsphere-ui/dist/
+frontend/travelsphere-ui/.angular/
+frontend/travelsphere-ui/*.log
+frontend/travelsphere-ui/coverage/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Docker
+docker-compose.override.yml
+
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*.swo
+*~
+
+# Logs
+logs/
+*.log
+output.log
+
+# Uploads
+uploads/
+temp/
+
+# Test reports
+**/test-results/
+**/surefire-reports/
+**/jacoco.exec
+**/coverage/
+
+# Misc
+*.pid
+*.seed
+*.pid.lock

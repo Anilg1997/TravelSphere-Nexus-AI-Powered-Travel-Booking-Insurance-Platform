@@ -1,0 +1,33 @@
+server:
+  port: 8092
+
+spring:
+  application:
+    name: document-service
+  datasource:
+    url: jdbc:postgresql://${POSTGRES_HOST:localhost}:5432/${POSTGRES_DB:travelsphere}?currentSchema=document_schema
+    username: ${POSTGRES_USER:travelsphere}
+    password: ${POSTGRES_PASSWORD:TravelSphere@2024}
+  jpa:
+    properties:
+      hibernate:
+        default_schema: document_schema
+  flyway:
+    schemas: document_schema
+  kafka:
+    producer:
+      bootstrap-servers: ${KAFKA_BOOTSTRAP_SERVERS:localhost:9092}
+    consumer:
+      bootstrap-servers: ${KAFKA_BOOTSTRAP_SERVERS:localhost:9092}
+      group-id: document-service-group
+    topic:
+      document-generated: ts.documents.generated
+
+app:
+  s3:
+    endpoint: ${S3_ENDPOINT:http://localhost:4566}
+    bucket-documents: ${S3_BUCKET_DOCUMENTS:travelsphere-documents}
+    bucket-photos: ${S3_BUCKET_PHOTOS:travelsphere-photos}
+    region: ${AWS_REGION:ap-south-1}
+    access-key: ${AWS_ACCESS_KEY_ID:fake-access-key}
+    secret-key: ${AWS_SECRET_ACCESS_KEY:fake-secret-key}
