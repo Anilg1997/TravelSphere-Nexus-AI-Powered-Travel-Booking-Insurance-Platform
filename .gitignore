@@ -1,8 +1,9 @@
-<<<<<<< HEAD
 # Java
 *.class
 *.jar
 *.war
+*.nar
+*.ear
 target/
 !.mvn/wrapper/maven-wrapper.jar
 
@@ -74,33 +75,16 @@ temp/
 **/jacoco.exec
 **/coverage/
 
-# Misc
-*.pid
-*.seed
-*.pid.lock
-=======
-# Compiled class file
-*.class
-
-# Log file
-*.log
-
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
-*.jar
-*.war
-*.nar
-*.ear
+# Package files
 *.zip
 *.tar.gz
 *.rar
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+# JVM crash logs
 hs_err_pid*
 replay_pid*
->>>>>>> eefa307712e1ccaa272d6e81dc815a0ddaf161ec
+
+# Misc
+*.pid
+*.seed
+*.pid.lock
