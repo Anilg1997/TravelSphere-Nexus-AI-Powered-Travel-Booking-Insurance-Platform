@@ -4,6 +4,21 @@ Enterprise Travel Booking & Insurance Platform — 18 Java Spring Boot Microserv
 
 [![GitHub](https://img.shields.io/badge/GitHub-Anilg1997%2Fai--travelsphere--platform-blue?logo=github)](https://github.com/Anilg1997/ai-travelsphere-platform)
 
+## 📸 Screenshots
+
+| Page | Preview |
+|------|---------|
+| **Home** — Hero with search bar, service cards, stats, AI CTA | ![Home](screenshots/home.svg) |
+| **Flight Search** — Search form with filters and result cards | ![Flight Search](screenshots/flight-search.svg) |
+| **Hotel Search** — Hotel search with star ratings, amenities, and pricing | ![Hotel Search](screenshots/hotel-search.svg) |
+| **AI Chat** — Chat interface with travel assistant and suggestions | ![AI Chat](screenshots/ai-chat.svg) |
+| **Trip Planner** — AI-powered itinerary generator with form and output | ![Trip Planner](screenshots/trip-planner.svg) |
+| **Holiday Packages** — Package listing with search, pricing, and ratings | ![Packages](screenshots/packages.svg) |
+| **Travel Insurance** — Insurance plans with coverage comparison table | ![Insurance](screenshots/insurance.svg) |
+| **Search Results** — Global search across flights, hotels, packages, cars, insurance | ![Search](screenshots/search.svg) |
+| **Login** — Sign in form with gradient background | ![Login](screenshots/login.svg) |
+| **Register** — Create account form | ![Register](screenshots/register.svg) |
+
 ## Architecture
 
 ```

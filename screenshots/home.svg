@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 750" font-family="'Inter','Segoe UI',sans-serif">
+  <defs>
+    <linearGradient id="heroGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#667eea"/>
+      <stop offset="100%" stop-color="#764ba2"/>
+    </linearGradient>
+    <linearGradient id="aiGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#667eea"/>
+      <stop offset="100%" stop-color="#764ba2"/>
+    </linearGradient>
+    <filter id="shadow1">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1100" height="750" fill="#f5f7fa"/>
+
+  <!-- Header/Toolbar -->
+  <rect width="1100" height="56" fill="#3f51b5"/>
+  <text x="24" y="36" fill="white" font-size="18" font-weight="700">✈ TravelSphere</text>
+  <rect x="180" y="18" rx="18" ry="18" width="64" height="22" fill="rgba(255,255,255,0.15)"/>
+  <text x="198" y="33" fill="white" font-size="11" font-weight="600">Flights</text>
+  <rect x="250" y="18" rx="18" ry="18" width="62" height="22" fill="rgba(255,255,255,0.1)"/>
+  <text x="266" y="33" fill="rgba(255,255,255,0.8)" font-size="11" font-weight="500">Hotels</text>
+  <rect x="318" y="18" rx="18" ry="18" width="52" height="22" fill="rgba(255,255,255,0.1)"/>
+  <text x="332" y="33" fill="rgba(255,255,255,0.8)" font-size="11" font-weight="500">Cars</text>
+  <rect x="376" y="18" rx="18" ry="18" width="72" height="22" fill="rgba(255,255,255,0.1)"/>
+  <text x="394" y="33" fill="rgba(255,255,255,0.8)" font-size="11" font-weight="500">Packages</text>
+  <rect x="454" y="18" rx="18" ry="18" width="72" height="22" fill="rgba(255,255,255,0.1)"/>
+  <text x="472" y="33" fill="rgba(255,255,255,0.8)" font-size="11" font-weight="500">Insurance</text>
+  <rect x="532" y="18" rx="18" ry="18" width="66" height="22" fill="rgba(255,255,255,0.1)"/>
+  <text x="548" y="33" fill="rgba(255,255,255,0.8)" font-size="11" font-weight="500">AI Travel</text>
+
+  <!-- Header right: search icon, sign in, sign up -->
+  <circle cx="1020" cy="28" r="14" fill="rgba(255,255,255,0.1)"/>
+  <text x="1020" y="33" fill="white" font-size="12" text-anchor="middle">🔍</text>
+  <rect x="1044" y="16" rx="16" ry="16" width="56" height="24" stroke="rgba(255,255,255,0.5)" stroke-width="1" fill="none"/>
+  <text x="1072" y="32" fill="white" font-size="11" text-anchor="middle" font-weight="500">Sign In</text>
+
+  <!-- Hero Section -->
+  <rect y="56" width="1100" height="170" fill="url(#heroGrad)"/>
+  <text x="550" y="100" fill="white" font-size="26" font-weight="800" text-anchor="middle">Explore the World with TravelSphere</text>
+  <text x="550" y="126" fill="rgba(255,255,255,0.85)" font-size="14" text-anchor="middle">Book flights, hotels, cars, and holiday packages — all powered by AI</text>
+
+  <!-- Search bar -->
+  <rect x="200" y="148" rx="25" ry="25" width="700" height="48" fill="white" filter="url(#shadow1)"/>
+  <text x="232" y="178" fill="#999" font-size="13">🔍  Where do you want to go?</text>
+  <rect x="760" y="155" rx="20" ry="20" width="120" height="34" fill="#ff4081"/>
+  <text x="820" y="177" fill="white" font-size="12" text-anchor="middle" font-weight="600">🔍  Search</text>
+
+  <!-- Page content area -->
+  <text x="40" y="270" font-size="20" font-weight="700" fill="#1a1a2e">Book Your Trip</text>
+  <text x="40" y="294" font-size="13" fill="#666">Everything you need for your journey</text>
+
+  <!-- Service Cards (3x2 grid) -->
+  <!-- Flight -->
+  <rect x="40" y="316" rx="16" ry="16" width="320" height="110" fill="white" filter="url(#shadow1)"/>
+  <text x="60" y="350" font-size="28">✈</text>
+  <text x="100" y="346" font-size="15" font-weight="600" fill="#1a1a2e">Flights</text>
+  <text x="100" y="364" font-size="11" fill="#666">Search &amp; Book</text>
+  <text x="60" y="388" font-size="11" fill="#888">Find the best flight deals across</text>
+  <text x="60" y="404" font-size="11" fill="#888">500+ airlines worldwide.</text>
+
+  <!-- Hotels -->
+  <rect x="390" y="316" rx="16" ry="16" width="320" height="110" fill="white" filter="url(#shadow1)"/>
+  <text x="410" y="350" font-size="28">🏨</text>
+  <text x="450" y="346" font-size="15" font-weight="600" fill="#1a1a2e">Hotels</text>
+  <text x="450" y="364" font-size="11" fill="#666">Stay Anywhere</text>
+  <text x="410" y="388" font-size="11" fill="#888">Book hotels, resorts, and homestays</text>
+  <text x="410" y="404" font-size="11" fill="#888">at the best prices.</text>
+
+  <!-- Car Rental -->
+  <rect x="740" y="316" rx="16" ry="16" width="320" height="110" fill="white" filter="url(#shadow1)"/>
+  <text x="760" y="350" font-size="28">🚗</text>
+  <text x="800" y="346" font-size="15" font-weight="600" fill="#1a1a2e">Car Rental</text>
+  <text x="800" y="364" font-size="11" fill="#666">Drive Free</text>
+  <text x="760" y="388" font-size="11" fill="#888">Ride in style with our premium</text>
+  <text x="760" y="404" font-size="11" fill="#888">car rental services.</text>
+
+  <!-- Transport -->
+  <rect x="40" y="444" rx="16" ry="16" width="320" height="110" fill="white" filter="url(#shadow1)"/>
+  <text x="60" y="478" font-size="28">🚆</text>
+  <text x="100" y="474" font-size="15" font-weight="600" fill="#1a1a2e">Transport</text>
+  <text x="100" y="492" font-size="11" fill="#666">Bus &amp; Train</text>
+  <text x="60" y="516" font-size="11" fill="#888">Book bus and train tickets for</text>
+  <text x="60" y="532" font-size="11" fill="#888">intercity travel.</text>
+
+  <!-- Insurance -->
+  <rect x="390" y="444" rx="16" ry="16" width="320" height="110" fill="white" filter="url(#shadow1)"/>
+  <text x="410" y="478" font-size="28">☂</text>
+  <text x="450" y="474" font-size="15" font-weight="600" fill="#1a1a2e">Insurance</text>
+  <text x="450" y="492" font-size="11" fill="#666">Travel Safe</text>
+  <text x="410" y="516" font-size="11" fill="#888">Protect your trip with comprehensive</text>
+  <text x="410" y="532" font-size="11" fill="#888">travel insurance.</text>
+
+  <!-- Packages -->
+  <rect x="740" y="444" rx="16" ry="16" width="320" height="110" fill="white" filter="url(#shadow1)"/>
+  <text x="760" y="478" font-size="28">🎁</text>
+  <text x="800" y="474" font-size="15" font-weight="600" fill="#1a1a2e">Packages</text>
+  <text x="800" y="492" font-size="11" fill="#666">Holiday Deals</text>
+  <text x="760" y="516" font-size="11" fill="#888">All-in-one holiday packages at</text>
+  <text x="760" y="532" font-size="11" fill="#888">unbeatable prices.</text>
+</svg>

@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 750" font-family="'Inter','Segoe UI',sans-serif">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#667eea"/>
+      <stop offset="100%" stop-color="#764ba2"/>
+    </linearGradient>
+    <filter id="cardShadow"><feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#000" flood-opacity="0.12"/></filter>
+  </defs>
+  <rect width="1100" height="750" fill="url(#bgGrad)"/>
+  <rect x="350" y="80" rx="24" ry="24" width="400" height="600" fill="white" filter="url(#cardShadow)"/>
+  <text x="550" y="138" fill="#3f51b5" font-size="24" font-weight="800" text-anchor="middle">🌍 TravelSphere</text>
+  <text x="550" y="164" fill="#666" font-size="13" text-anchor="middle">Create your account and start exploring</text>
+
+  <!-- Full Name -->
+  <rect x="380" y="190" rx="8" ry="8" width="340" height="56" fill="none" stroke="#ddd" stroke-width="1"/>
+  <text x="396" y="212" fill="#666" font-size="10" font-weight="500">Full Name</text>
+  <text x="396" y="232" fill="#333" font-size="14">Anil Kumar</text>
+
+  <!-- Email -->
+  <rect x="380" y="260" rx="8" ry="8" width="340" height="56" fill="none" stroke="#ddd" stroke-width="1"/>
+  <text x="396" y="282" fill="#666" font-size="10" font-weight="500">Email</text>
+  <text x="396" y="302" fill="#333" font-size="14">anil@example.com</text>
+
+  <!-- Phone -->
+  <rect x="380" y="330" rx="8" ry="8" width="340" height="56" fill="none" stroke="#ddd" stroke-width="1"/>
+  <text x="396" y="352" fill="#666" font-size="10" font-weight="500">Phone (optional)</text>
+  <text x="396" y="372" fill="#ccc" font-size="14">+91 98765 43210</text>
+
+  <!-- Password -->
+  <rect x="380" y="400" rx="8" ry="8" width="340" height="56" fill="none" stroke="#ddd" stroke-width="1"/>
+  <text x="396" y="422" fill="#666" font-size="10" font-weight="500">Password</text>
+  <text x="396" y="442" fill="#333" font-size="14">••••••••</text>
+  <rect x="690" y="418" rx="4" ry="4" width="16" height="16" fill="none" stroke="#ccc" stroke-width="1"/>
+  <text x="695" y="431" fill="#ccc" font-size="10">👁</text>
+
+  <!-- Create Account button -->
+  <rect x="380" y="480" rx="24" ry="24" width="340" height="44" fill="#3f51b5"/>
+  <text x="550" y="508" fill="white" font-size="14" font-weight="600" text-anchor="middle">Create Account</text>
+
+  <!-- Auth footer -->
+  <text x="550" y="554" fill="#666" font-size="12" text-anchor="middle">Already have an account?</text>
+  <text x="550" y="578" fill="#3f51b5" font-size="14" font-weight="600" text-anchor="middle" text-decoration="underline">Sign In</text>
+</svg>

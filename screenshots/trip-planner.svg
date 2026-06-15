@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 750" font-family="'Inter','Segoe UI',sans-serif">
+  <defs><filter id="shadow1"><feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000" flood-opacity="0.08"/></filter></defs>
+  <rect width="1100" height="750" fill="#f5f7fa"/>
+  <rect width="1100" height="56" fill="#3f51b5"/>
+  <text x="24" y="36" fill="white" font-size="18" font-weight="700">✈ TravelSphere</text>
+  <text x="40" y="100" font-size="22" font-weight="700" fill="#1a1a2e">Plan Your Trip</text>
+  <text x="40" y="124" font-size="13" fill="#666">Let AI create a personalized itinerary for you</text>
+
+  <!-- Back button -->
+  <rect x="40" y="148" rx="4" ry="4" width="120" height="24" fill="none"/>
+  <text x="56" y="165" fill="#666" font-size="12">← Back to AI Chat</text>
+
+  <!-- Form Section -->
+  <rect x="40" y="180" rx="16" ry="16" width="500" height="340" fill="white" filter="url(#shadow1)"/>
+  <rect x="64" y="204" rx="8" ry="8" width="452" height="56" fill="none" stroke="#ddd" stroke-width="1"/>
+  <text x="80" y="226" fill="#666" font-size="10" font-weight="500">Destination</text>
+  <text x="80" y="246" fill="#333" font-size="14">Manali, Himachal Pradesh</text>
+
+  <rect x="64" y="274" rx="8" ry="8" width="216" height="56" fill="none" stroke="#ddd" stroke-width="1"/>
+  <text x="80" y="296" fill="#666" font-size="10" font-weight="500">Duration (days)</text>
+  <text x="80" y="316" fill="#333" font-size="14">5</text>
+
+  <rect x="300" y="274" rx="8" ry="8" width="216" height="56" fill="none" stroke="#ddd" stroke-width="1"/>
+  <text x="316" y="296" fill="#666" font-size="10" font-weight="500">Travelers</text>
+  <text x="316" y="316" fill="#333" font-size="14">2</text>
+
+  <rect x="64" y="344" rx="8" ry="8" width="452" height="56" fill="none" stroke="#ddd" stroke-width="1"/>
+  <text x="80" y="366" fill="#666" font-size="10" font-weight="500">Budget (₹)</text>
+  <text x="80" y="386" fill="#333" font-size="14">50,000</text>
+
+  <rect x="64" y="414" rx="8" ry="8" width="452" height="72" fill="none" stroke="#ddd" stroke-width="1"/>
+  <text x="80" y="436" fill="#666" font-size="10" font-weight="500">Preferences (optional)</text>
+  <text x="80" y="458" fill="#ddd" font-size="12">e.g., adventure, beach, culture, food, family-friendly</text>
+
+  <rect x="64" y="500" rx="24" ry="24" width="452" height="40" fill="#3f51b5"/>
+  <text x="290" y="526" fill="white" font-size="13" text-anchor="middle" font-weight="600">✨ Plan My Trip</text>
+
+  <!-- Generated Itinerary -->
+  <rect x="570" y="180" rx="16" ry="16" width="490" height="400" fill="white" filter="url(#shadow1)"/>
+  <text x="590" y="214" font-size="16" font-weight="700" fill="#3f51b5">Your 5-Day Trip to Manali 🎉</text>
+  <text x="590" y="246" font-size="12" font-weight="600" fill="#1a1a2e">🌟 Manali Travel Itinerary</text>
+  <text x="590" y="268" fill="#999" font-size="11">━━━━━━━━━━━━━━━━━━━━━━━━━━━</text>
+  <text x="590" y="290" font-size="12" font-weight="600" fill="#333">Trip Details:</text>
+  <text x="590" y="310" fill="#666" font-size="11">• Duration: 5 Days</text>
+  <text x="590" y="326" fill="#666" font-size="11">• Travelers: 2</text>
+  <text x="590" y="342" fill="#666" font-size="11">• Budget: ₹50,000</text>
+  <text x="590" y="358" fill="#666" font-size="11">• Preferences: Adventure</text>
+  <text x="590" y="380" font-size="12" font-weight="600" fill="#333">Day 1 - Arrival &amp; Exploration</text>
+  <text x="590" y="398" fill="#666" font-size="11">• Check into your accommodation</text>
+  <text x="590" y="414" fill="#666" font-size="11">• Explore Mall Road &amp; local markets</text>
+  <text x="590" y="430" fill="#666" font-size="11">• Evening walk to Hadimba Temple</text>
+  <text x="590" y="450" font-size="12" font-weight="600" fill="#333">Day 2 - Solang Valley Adventure</text>
+  <text x="590" y="468" fill="#666" font-size="11">• Paragliding &amp; zorbing</text>
+  <text x="590" y="484" fill="#666" font-size="11">• Snow activities (if season allows)</text>
+  <text x="590" y="500" fill="#666" font-size="11">• Lunch at a mountain cafe</text>
+  <text x="590" y="520" font-size="12" font-weight="600" fill="#333">Budget Breakdown:</text>
+  <text x="590" y="538" fill="#666" font-size="11">• Accommodation: ₹20,000</text>
+  <text x="590" y="554" fill="#666" font-size="11">• Activities: ₹12,500</text>
+  <text x="590" y="570" fill="#666" font-size="11">• Food &amp; Transport: ₹17,500</text>
+</svg>

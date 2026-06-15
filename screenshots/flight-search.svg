@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 750" font-family="'Inter','Segoe UI',sans-serif">
+  <defs>
+    <filter id="shadow1"><feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000" flood-opacity="0.08"/></filter>
+  </defs>
+  <rect width="1100" height="750" fill="#f5f7fa"/>
+
+  <!-- Header -->
+  <rect width="1100" height="56" fill="#3f51b5"/>
+  <text x="24" y="36" fill="white" font-size="18" font-weight="700">✈ TravelSphere</text>
+
+  <!-- Page title -->
+  <text x="40" y="100" font-size="22" font-weight="700" fill="#1a1a2e">Search Flights</text>
+  <text x="40" y="124" font-size="13" fill="#666">Find the best flight deals across 500+ airlines</text>
+
+  <!-- Search form section -->
+  <rect x="40" y="148" rx="16" ry="16" width="700" height="200" fill="white" filter="url(#shadow1)"/>
+  <rect x="64" y="170" rx="8" ry="8" width="310" height="56" fill="none" stroke="#ddd" stroke-width="1"/>
+  <text x="80" y="192" fill="#666" font-size="10" font-weight="500">From</text>
+  <text x="80" y="212" fill="#333" font-size="14">Mumbai (BOM)</text>
+
+  <rect x="394" y="170" rx="8" ry="8" width="310" height="56" fill="none" stroke="#ddd" stroke-width="1"/>
+  <text x="410" y="192" fill="#666" font-size="10" font-weight="500">To</text>
+  <text x="410" y="212" fill="#333" font-size="14">Delhi (DEL)</text>
+
+  <rect x="64" y="240" rx="8" ry="8" width="310" height="56" fill="none" stroke="#ddd" stroke-width="1"/>
+  <text x="80" y="262" fill="#666" font-size="10" font-weight="500">Date</text>
+  <text x="80" y="282" fill="#333" font-size="14">2026-06-20</text>
+
+  <rect x="394" y="240" rx="8" ry="8" width="310" height="56" fill="none" stroke="#ddd" stroke-width="1"/>
+  <text x="410" y="262" fill="#666" font-size="10" font-weight="500">Cabin Class</text>
+  <text x="410" y="282" fill="#333" font-size="14">Economy</text>
+
+  <rect x="64" y="310" rx="20" ry="20" width="160" height="36" fill="#3f51b5"/>
+  <text x="144" y="333" fill="white" font-size="12" text-anchor="middle" font-weight="600">🔍  Search Flights</text>
+
+  <!-- Filter sidebar -->
+  <rect x="780" y="148" rx="16" ry="16" width="280" height="260" fill="white" filter="url(#shadow1)"/>
+  <text x="800" y="180" font-size="14" font-weight="600" fill="#1a1a2e">Filters</text>
+  <text x="800" y="210" font-size="12" font-weight="500" fill="#333">Price Range</text>
+  <rect x="800" y="218" rx="4" ry="4" width="240" height="4" fill="#e0e0e0"/>
+  <rect x="800" y="218" rx="4" ry="4" width="160" height="4" fill="#3f51b5"/>
+  <circle cx="960" cy="220" r="8" fill="#3f51b5" stroke="white" stroke-width="2"/>
+  <text x="800" y="248" fill="#666" font-size="11">₹2,000</text>
+  <text x="1020" y="248" fill="#666" font-size="11">₹15,000</text>
+
+  <text x="800" y="276" font-size="12" font-weight="500" fill="#333">Airlines</text>
+  <rect x="800" y="286" rx="12" ry="12" width="110" height="24" fill="#e8eaf6"/>
+  <text x="810" y="302" fill="#3f51b5" font-size="10" font-weight="600">All Airlines</text>
+  <rect x="920" y="286" rx="12" ry="12" width="70" height="24" fill="#f5f5f5"/>
+  <text x="930" y="302" fill="#666" font-size="10">IndiGo</text>
+
+  <text x="800" y="336" font-size="12" font-weight="500" fill="#333">Stops</text>
+  <rect x="800" y="346" rx="12" ry="12" width="60" height="24" fill="#e8eaf6"/>
+  <text x="810" y="362" fill="#3f51b5" font-size="10" font-weight="600">Any</text>
+  <rect x="868" y="346" rx="12" ry="12" width="50" height="24" fill="#f5f5f5"/>
+  <text x="878" y="362" fill="#666" font-size="10">Direct</text>
+
+  <text x="800" y="396" font-size="12" font-weight="500" fill="#333">Departure Time</text>
+  <rect x="800" y="406" rx="12" ry="12" width="60" height="24" fill="#e8eaf6"/>
+  <text x="810" y="422" fill="#3f51b5" font-size="10" font-weight="600">Any</text>
+
+  <!-- Flight Results -->
+  <rect x="40" y="376" rx="16" ry="16" width="710" height="90" fill="white" filter="url(#shadow1)"/>
+  <text x="60" y="405" font-size="14" font-weight="600" fill="#1a1a2e">✈  IndiGo · 6E-123</text>
+  <text x="60" y="424" fill="#666" font-size="11">Jun 20, 10:30 AM — Jun 20, 1:15 PM</text>
+  <text x="60" y="444" fill="#888" font-size="11">165 min · Airbus A320neo</text>
+  <text x="620" y="405" font-size="22" font-weight="700" fill="#3f51b5">₹4,599</text>
+  <rect x="660" y="410" rx="10" ry="10" width="70" height="20" fill="#e8f5e9"/>
+  <text x="665" y="424" fill="#2e7d32" font-size="9" font-weight="600">8 seats left</text>
+
+  <rect x="40" y="482" rx="16" ry="16" width="710" height="90" fill="white" filter="url(#shadow1)"/>
+  <text x="60" y="511" font-size="14" font-weight="600" fill="#1a1a2e">✈  SpiceJet · SG-8157</text>
+  <text x="60" y="530" fill="#666" font-size="11">Jun 20, 2:45 PM — Jun 20, 5:00 PM</text>
+  <text x="60" y="550" fill="#888" font-size="11">135 min · Boeing 737-800</text>
+  <text x="620" y="511" font-size="22" font-weight="700" fill="#3f51b5">₹3,299</text>
+  <rect x="660" y="516" rx="10" ry="10" width="70" height="20" fill="#e8f5e9"/>
+  <text x="665" y="530" fill="#2e7d32" font-size="9" font-weight="600">15 seats left</text>
+
+  <rect x="40" y="588" rx="16" ry="16" width="710" height="90" fill="white" filter="url(#shadow1)"/>
+  <text x="60" y="617" font-size="14" font-weight="600" fill="#1a1a2e">✈  Vistara · UK-997</text>
+  <text x="60" y="636" fill="#666" font-size="11">Jun 20, 7:00 AM — Jun 20, 9:30 AM</text>
+  <text x="60" y="656" fill="#888" font-size="11">150 min · Airbus A320</text>
+  <text x="620" y="617" font-size="22" font-weight="700" fill="#3f51b5">₹5,999</text>
+  <rect x="660" y="622" rx="10" ry="10" width="70" height="20" fill="#e8f5e9"/>
+  <text x="665" y="636" fill="#2e7d32" font-size="9" font-weight="600">5 seats left</text>
+</svg>

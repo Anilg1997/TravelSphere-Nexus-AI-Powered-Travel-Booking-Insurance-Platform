@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 750" font-family="'Inter','Segoe UI',sans-serif">
+  <defs><filter id="shadow1"><feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000" flood-opacity="0.08"/></filter></defs>
+  <rect width="1100" height="750" fill="#f5f7fa"/>
+  <rect width="1100" height="56" fill="#3f51b5"/>
+  <text x="24" y="36" fill="white" font-size="18" font-weight="700">✈ TravelSphere</text>
+  <text x="40" y="100" font-size="22" font-weight="700" fill="#1a1a2e">Find Hotels</text>
+  <text x="40" y="124" font-size="13" fill="#666">Discover the perfect stay for your trip</text>
+
+  <!-- Search bar -->
+  <rect x="40" y="148" rx="16" ry="16" width="700" height="120" fill="white" filter="url(#shadow1)"/>
+  <rect x="64" y="170" rx="8" ry="8" width="310" height="56" fill="none" stroke="#ddd" stroke-width="1"/>
+  <text x="80" y="192" fill="#666" font-size="10" font-weight="500">City</text>
+  <text x="80" y="212" fill="#333" font-size="14">Goa</text>
+  <rect x="394" y="170" rx="8" ry="8" width="310" height="56" fill="none" stroke="#ddd" stroke-width="1"/>
+  <text x="410" y="192" fill="#666" font-size="10" font-weight="500">Min Stars</text>
+  <text x="410" y="212" fill="#333" font-size="14">3 Stars</text>
+  <rect x="64" y="236" rx="20" ry="20" width="160" height="36" fill="#3f51b5"/>
+  <text x="144" y="259" fill="white" font-size="12" text-anchor="middle" font-weight="600">🔍  Search Hotels</text>
+
+  <!-- Hotel Cards -->
+  <rect x="40" y="296" rx="16" ry="16" width="710" height="130" fill="white" filter="url(#shadow1)"/>
+  <text x="60" y="328" font-size="28">🏨</text>
+  <text x="100" y="324" font-size="15" font-weight="600" fill="#1a1a2e">Taj Exotica</text>
+  <text x="100" y="344" fill="#666" font-size="11">Goa, India · ⭐⭐⭐⭐⭐</text>
+  <text x="60" y="370" fill="#888" font-size="11">Experience luxury at its finest at this beachfront resort</text>
+  <text x="60" y="388" fill="#888" font-size="11">with world-class amenities and stunning sunset views.</text>
+  <rect x="60" y="400" rx="10" ry="10" height="22" width="70" fill="#e8eaf6"/><text x="66" y="416" fill="#3f51b5" font-size="9" font-weight="500">Pool</text>
+  <rect x="136" y="400" rx="10" ry="10" height="22" width="70" fill="#e8eaf6"/><text x="142" y="416" fill="#3f51b5" font-size="9" font-weight="500">Spa</text>
+  <rect x="212" y="400" rx="10" ry="10" height="22" width="80" fill="#e8eaf6"/><text x="218" y="416" fill="#3f51b5" font-size="9" font-weight="500">Beach</text>
+  <text x="600" y="370" font-size="18" font-weight="700" fill="#3f51b5">₹15,000/night</text>
+  <text x="600" y="392" fill="#666" font-size="11">⭐ 4.8 (234 reviews)</text>
+
+  <rect x="40" y="444" rx="16" ry="16" width="710" height="130" fill="white" filter="url(#shadow1)"/>
+  <text x="60" y="476" font-size="28">🏨</text>
+  <text x="100" y="472" font-size="15" font-weight="600" fill="#1a1a2e">Hilton Goa Resort</text>
+  <text x="100" y="492" fill="#666" font-size="11">Goa, India · ⭐⭐⭐⭐</text>
+  <text x="60" y="518" fill="#888" font-size="11">Modern resort with lagoon-style pool, multi-cuisine</text>
+  <text x="60" y="536" fill="#888" font-size="11">restaurants, and easy beach access.</text>
+  <rect x="60" y="548" rx="10" ry="10" height="22" width="70" fill="#e8eaf6"/><text x="66" y="564" fill="#3f51b5" font-size="9" font-weight="500">Pool</text>
+  <rect x="136" y="548" rx="10" ry="10" height="22" width="80" fill="#e8eaf6"/><text x="142" y="564" fill="#3f51b5" font-size="9" font-weight="500">Restaurant</text>
+  <rect x="222" y="548" rx="10" ry="10" height="22" width="70" fill="#e8eaf6"/><text x="228" y="564" fill="#3f51b5" font-size="9" font-weight="500">GYM</text>
+  <text x="600" y="518" font-size="18" font-weight="700" fill="#3f51b5">₹6,500/night</text>
+  <text x="600" y="540" fill="#666" font-size="11">⭐ 4.2 (189 reviews)</text>
+
+  <rect x="40" y="592" rx="16" ry="16" width="710" height="130" fill="white" filter="url(#shadow1)"/>
+  <text x="60" y="624" font-size="28">🏨</text>
+  <text x="100" y="620" font-size="15" font-weight="600" fill="#1a1a2e">The Lalit Golf &amp; Spa Resort</text>
+  <text x="100" y="640" fill="#666" font-size="11">Goa, India · ⭐⭐⭐⭐</text>
+  <text x="60" y="666" fill="#888" font-size="11">Sprawling resort set amidst 75 acres of lush greenery</text>
+  <text x="60" y="684" fill="#888" font-size="11">with golf course, spa, and multiple dining options.</text>
+  <rect x="60" y="696" rx="10" ry="10" height="22" width="70" fill="#e8eaf6"/><text x="66" y="712" fill="#3f51b5" font-size="9" font-weight="500">Golf</text>
+  <rect x="136" y="696" rx="10" ry="10" height="22" width="70" fill="#e8eaf6"/><text x="142" y="712" fill="#3f51b5" font-size="9" font-weight="500">Spa</text>
+  <rect x="212" y="696" rx="10" ry="10" height="22" width="80" fill="#e8eaf6"/><text x="218" y="712" fill="#3f51b5" font-size="9" font-weight="500">Pool</text>
+  <text x="600" y="666" font-size="18" font-weight="700" fill="#3f51b5">₹8,500/night</text>
+  <text x="600" y="688" fill="#666" font-size="11">⭐ 4.5 (312 reviews)</text>
+</svg>

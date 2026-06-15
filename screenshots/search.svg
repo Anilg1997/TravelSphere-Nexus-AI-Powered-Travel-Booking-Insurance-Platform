@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 750" font-family="'Inter','Segoe UI',sans-serif">
+  <defs><filter id="shadow1"><feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000" flood-opacity="0.08"/></filter></defs>
+  <rect width="1100" height="750" fill="#f5f7fa"/>
+  <rect width="1100" height="56" fill="#3f51b5"/>
+  <text x="24" y="36" fill="white" font-size="18" font-weight="700">✈ TravelSphere</text>
+  <text x="40" y="100" font-size="22" font-weight="700" fill="#1a1a2e">Search Results</text>
+  <text x="40" y="124" font-size="13" fill="#666">Showing results for "Goa"</text>
+
+  <!-- Result 1 - Flight -->
+  <rect x="40" y="156" rx="16" ry="16" width="1020" height="80" fill="white" filter="url(#shadow1)"/>
+  <text x="64" y="186" font-size="24">✈</text>
+  <text x="100" y="184" font-size="15" font-weight="600" fill="#1a1a2e">Mumbai to Goa - IndiGo</text>
+  <text x="100" y="204" fill="#666" font-size="11">Flight · Mumbai</text>
+  <text x="500" y="204" fill="#666" font-size="11">Starting from ₹3,499</text>
+
+  <!-- Result 2 - Hotel -->
+  <rect x="40" y="248" rx="16" ry="16" width="1020" height="80" fill="white" filter="url(#shadow1)"/>
+  <text x="64" y="278" font-size="24">🏨</text>
+  <text x="100" y="276" font-size="15" font-weight="600" fill="#1a1a2e">Taj Exotica Resort &amp; Spa</text>
+  <text x="100" y="296" fill="#666" font-size="11">Hotel · Goa</text>
+  <text x="500" y="296" fill="#666" font-size="11">Starting from ₹15,000/night</text>
+
+  <!-- Result 3 - Package -->
+  <rect x="40" y="340" rx="16" ry="16" width="1020" height="80" fill="white" filter="url(#shadow1)"/>
+  <text x="64" y="370" font-size="24">🎁</text>
+  <text x="100" y="368" font-size="15" font-weight="600" fill="#1a1a2e">Goa Getaway Package</text>
+  <text x="100" y="388" fill="#666" font-size="11">Package · Goa</text>
+  <text x="500" y="388" fill="#666" font-size="11">Starting from ₹12,999/person</text>
+
+  <!-- Result 4 - Car -->
+  <rect x="40" y="432" rx="16" ry="16" width="1020" height="80" fill="white" filter="url(#shadow1)"/>
+  <text x="64" y="462" font-size="24">🚗</text>
+  <text x="100" y="460" font-size="15" font-weight="600" fill="#1a1a2e">Self-Drive Car Rental in Goa</text>
+  <text x="100" y="480" fill="#666" font-size="11">Car · Goa</text>
+  <text x="500" y="480" fill="#666" font-size="11">Starting from ₹1,499/day</text>
+
+  <!-- Result 5 - Insurance -->
+  <rect x="40" y="524" rx="16" ry="16" width="1020" height="80" fill="white" filter="url(#shadow1)"/>
+  <text x="64" y="554" font-size="24">☂</text>
+  <text x="100" y="552" font-size="15" font-weight="600" fill="#1a1a2e">Travel Insurance - Basic Plan</text>
+  <text x="100" y="572" fill="#666" font-size="11">Insurance · India</text>
+  <text x="500" y="572" fill="#666" font-size="11">Starting from ₹500</text>
+</svg>
