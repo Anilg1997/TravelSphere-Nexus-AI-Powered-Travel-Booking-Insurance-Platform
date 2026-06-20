@@ -47,7 +47,7 @@ public class QdrantConfig {
         try {
             var collections = qdrantClient.listCollectionsAsync().get();
             boolean exists = collections.stream()
-                    .anyMatch(c -> c.getName().equals(collectionName));
+                    .anyMatch(c -> c.equals(collectionName));
             if (!exists) {
                 qdrantClient.createCollectionAsync(Collections.CreateCollection.newBuilder()
                         .setCollectionName(collectionName)

@@ -1,7 +1,6 @@
 package com.travelsphere.ai.service;
 
 import com.travelsphere.ai.dto.*;
-import com.travelsphere.admin.dto.SupportTicketRequest;
 
 import java.util.List;
 import java.util.Map;

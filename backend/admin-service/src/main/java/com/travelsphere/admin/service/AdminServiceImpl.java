@@ -156,8 +156,8 @@ public class AdminServiceImpl implements AdminService {
 
         List<AnalyticsResponse.DataPoint> userGrowthPoints = List.of(
                 AnalyticsResponse.DataPoint.builder().label("Today").value(12).build(),
-                AnalyticsResponse.DataPoint.DataPointBuilder().label("This Week").value(89).build(),
-                AnalyticsResponse.DataPoint.DataPointBuilder().label("This Month").value(345).build());
+                AnalyticsResponse.DataPoint.builder().label("This Week").value(89).build(),
+                AnalyticsResponse.DataPoint.builder().label("This Month").value(345).build());
 
         return AnalyticsResponse.builder()
                 .revenue(AnalyticsResponse.RevenueAnalytics.builder()
