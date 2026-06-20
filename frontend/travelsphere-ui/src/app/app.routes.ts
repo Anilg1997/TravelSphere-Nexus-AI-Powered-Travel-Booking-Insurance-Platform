@@ -64,7 +64,12 @@ export const routes: Routes = [
 
   // Admin
   { path: 'admin', loadComponent: () => import('./pages/admin/admin-dashboard/admin-dashboard.component').then(m => m.AdminDashboardComponent), canActivate: [authGuard] },
+  { path: 'admin/users', loadComponent: () => import('./pages/admin/user-management/user-management.component').then(m => m.UserManagementComponent), canActivate: [authGuard] },
+  { path: 'admin/bookings', loadComponent: () => import('./pages/admin/booking-management/booking-management.component').then(m => m.BookingManagementComponent), canActivate: [authGuard] },
+  { path: 'admin/analytics', loadComponent: () => import('./pages/admin/analytics/analytics.component').then(m => m.AnalyticsComponent), canActivate: [authGuard] },
   { path: 'admin/fraud-alerts', loadComponent: () => import('./pages/admin/fraud-alerts/fraud-alerts.component').then(m => m.FraudAlertsComponent), canActivate: [authGuard] },
+  { path: 'admin/tickets', loadComponent: () => import('./pages/admin/support-tickets/support-tickets.component').then(m => m.SupportTicketsComponent), canActivate: [authGuard] },
+  { path: 'admin/system-health', loadComponent: () => import('./pages/admin/system-health/system-health.component').then(m => m.SystemHealthComponent), canActivate: [authGuard] },
 
   { path: '**', redirectTo: '/home' },
 ];

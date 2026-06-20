@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" font-family="Inter, sans-serif">
+  <defs>
+    <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#667eea"/><stop offset="100%" style="stop-color:#764ba2"/></linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="#f0f2f5"/>
+  <text x="48" y="48" font-size="28" font-weight="bold" fill="#1a1a2e">🤖 AI Travel Assistant</text>
+  <text x="48" y="72" font-size="14" fill="#888">RAG-enhanced chat with knowledge base</text>
+  <!-- Chat Panel -->
+  <rect x="48" y="96" width="880" height="560" rx="24" fill="white"/>
+  <!-- Messages -->
+  <rect x="72" y="120" width="400" height="80" rx="16" fill="#f0f2f5"/>
+  <text x="84" y="142" font-size="11" font-weight="bold" fill="#1a1a2e">TravelSphere AI</text>
+  <text x="84" y="162" font-size="13" fill="#333">Hello! I'm your AI travel assistant. I can help with destinations, itineraries, and more!</text>
+  
+  <rect x="500" y="216" width="400" height="60" rx="16" fill="#3f51b5"/>
+  <text x="512" y="238" font-size="11" font-weight="bold" fill="rgba(255,255,255,0.8)">You</text>
+  <text x="512" y="258" font-size="13" fill="white">What are the best beaches in Goa?</text>
+
+  <rect x="72" y="292" width="500" height="140" rx="16" fill="#e8f5e9"/>
+  <text x="84" y="314" font-size="11" font-weight="bold" fill="#2e7d32">TravelSphere AI (RAG-Enhanced)</text>
+  <text x="84" y="336" font-size="13" fill="#333">Based on our travel knowledge base, here are the best beaches in Goa:</text>
+  <text x="84" y="358" font-size="13" fill="#333">🏖️ Baga Beach - Watersports & nightlife</text>
+  <text x="84" y="378" font-size="13" fill="#333">🏖️ Anjuna Beach - Famous flea market</text>
+  <text x="84" y="398" font-size="13" fill="#333">🏖️ Palolem Beach - Serene & picturesque</text>
+  <text x="84" y="418" font-size="11" fill="#888">Source: Travel knowledge base (3 chunks retrieved)</text>
+
+  <rect x="72" y="448" width="450" height="80" rx="16" fill="#f0f2f5"/>
+  <text x="84" y="470" font-size="11" font-weight="bold" fill="#1a1a2e">TravelSphere AI</text>
+  <text x="84" y="490" font-size="13" fill="#333">Would you like me to plan a full Goa itinerary or help you book hotels/flights?</text>
+
+  <!-- Input -->
+  <rect x="48" y="672" width="880" height="60" rx="30" fill="white"/>
+  <text x="72" y="706" font-size="14" fill="#999">Ask about destinations, itineraries, tips...</text>
+  <circle cx="870" cy="702" r="20" fill="#3f51b5"/><text x="863" y="708" fill="white" font-size="14">➤</text>
+
+  <!-- Knowledge Base Panel -->
+  <rect x="948" y="96" width="220" height="560" rx="16" fill="white"/>
+  <text x="964" y="124" font-size="13" font-weight="bold" fill="#1a1a2e">🧠 Knowledge Base</text>
+  <line x1="948" y1="136" x2="1168" y2="136" stroke="#eee"/>
+  <rect x="960" y="148" width="196" height="60" rx="8" fill="#e3f2fd"/>
+  <text x="972" y="168" font-size="11" font-weight="bold" fill="#1565c0">Goa Travel Guide</text>
+  <text x="972" y="186" font-size="10" fill="#666">24 chunks · Updated 2h ago</text>
+  <rect x="960" y="216" width="196" height="60" rx="8" fill="#fff3e0"/>
+  <text x="972" y="236" font-size="11" font-weight="bold" fill="#e65100">Hotel Policies 2026</text>
+  <text x="972" y="254" font-size="10" fill="#666">18 chunks · Updated 1d ago</text>
+  <rect x="960" y="284" width="196" height="60" rx="8" fill="#e8f5e9"/>
+  <text x="972" y="304" font-size="11" font-weight="bold" fill="#2e7d32">Visa Requirements</text>
+  <text x="972" y="322" font-size="10" fill="#666">12 chunks · Updated 3d ago</text>
+  <rect x="960" y="352" width="196" height="60" rx="8" fill="#f3e5f5"/>
+  <text x="972" y="372" font-size="11" font-weight="bold" fill="#7b1fa2">Insurance Coverage</text>
+  <text x="972" y="390" font-size="10" fill="#666">8 chunks · Updated 5d ago</text>
+  <line x1="948" y1="430" x2="1168" y2="430" stroke="#eee"/>
+  <text x="964" y="458" font-size="11" font-weight="bold" fill="#1a1a2e">MCP Tools Available</text>
+  <text x="964" y="480" font-size="10" fill="#666">🔍 search_flights</text>
+  <text x="964" y="498" font-size="10" fill="#666">🏨 search_hotels</text>
+  <text x="964" y="516" font-size="10" fill="#666">🌤 get_weather</text>
+  <text x="964" y="534" font-size="10" fill="#666">💰 currency_converter</text>
+  <text x="964" y="552" font-size="10" fill="#666">📋 create_booking</text>
+  <text x="964" y="570" font-size="10" fill="#666">📄 get_destination_info</text>
+  <text x="964" y="588" font-size="10" fill="#666">📍 get_travel_advisory</text>
+</svg>

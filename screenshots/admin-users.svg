@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" font-family="Inter, sans-serif">
+  <rect width="1200" height="800" fill="#f0f2f5"/>
+  <rect x="0" y="0" width="240" height="800" fill="#1a1a2e"/>
+  <text x="24" y="40" fill="white" font-size="18" font-weight="bold">🛡 Admin Panel</text>
+  <line x1="0" y1="56" x2="240" y2="56" stroke="rgba(255,255,255,0.1)"/>
+  <rect x="12" y="72" width="216" height="40" rx="8" fill="transparent"/><text x="36" y="97" fill="rgba(255,255,255,0.7)" font-size="14">📊 Dashboard</text>
+  <rect x="12" y="120" width="216" height="40" rx="8" fill="#3f51b5"/><text x="36" y="145" fill="white" font-size="14">👥 Users</text>
+  <rect x="12" y="168" width="216" height="40" rx="8" fill="transparent"/><text x="36" y="193" fill="rgba(255,255,255,0.7)" font-size="14">📋 Bookings</text>
+  <rect x="12" y="216" width="216" height="40" rx="8" fill="transparent"/><text x="36" y="241" fill="rgba(255,255,255,0.7)" font-size="14">📈 Analytics</text>
+  <rect x="12" y="264" width="216" height="40" rx="8" fill="transparent"/><text x="36" y="289" fill="rgba(255,255,255,0.7)" font-size="14">🎫 Support</text>
+  <rect x="12" y="312" width="216" height="40" rx="8" fill="transparent"/><text x="36" y="337" fill="rgba(255,255,255,0.7)" font-size="14">⚠ Fraud Alerts</text>
+  <rect x="12" y="360" width="216" height="40" rx="8" fill="transparent"/><text x="36" y="385" fill="rgba(255,255,255,0.7)" font-size="14">🔧 System</text>
+  <!-- Main Content -->
+  <text x="272" y="40" font-size="24" font-weight="bold" fill="#1a1a2e">User Management</text><text x="272" y="60" font-size="12" fill="#888">Manage all registered users</text>
+  <rect x="272" y="80" width="880" height="60" rx="12" fill="white"/>
+  <rect x="290" y="95" width="200" height="34" rx="6" fill="#f0f0f0"/><text x="300" y="116" fill="#666" font-size="13">🔍 Search users...</text>
+  <rect x="510" y="95" width="150" height="34" rx="6" fill="#f0f0f0"/><text x="520" y="116" fill="#666" font-size="13">▼ All Roles</text>
+  <rect x="680" y="95" width="100" height="34" rx="17" fill="#3f51b5"/><text x="710" y="116" fill="white" font-size="13" font-weight="bold">Search</text>
+  <!-- Table -->
+  <rect x="272" y="155" width="880" height="44" rx="12" fill="#f8f9fa"/>
+  <text x="290" y="182" font-size="12" font-weight="bold" fill="#555">NAME</text>
+  <text x="460" y="182" font-size="12" font-weight="bold" fill="#555">EMAIL</text>
+  <text x="630" y="182" font-size="12" font-weight="bold" fill="#555">ROLE</text>
+  <text x="720" y="182" font-size="12" font-weight="bold" fill="#555">STATUS</text>
+  <text x="820" y="182" font-size="12" font-weight="bold" fill="#555">LOYALTY</text>
+  <text x="920" y="182" font-size="12" font-weight="bold" fill="#555">BOOKINGS</text>
+  <text x="1020" y="182" font-size="12" font-weight="bold" fill="#555">ACTIONS</text>
+  <!-- Table Rows -->
+  <line x1="272" y1="199" x2="1152" y2="199" stroke="#eee"/>
+  <text x="290" y="224" font-size="13" fill="#333">Rahul Sharma</text><text x="460" y="224" font-size="13" fill="#666">rahul@email.com</text>
+  <rect x="620" y="212" width="50" height="22" rx="11" fill="#e3f2fd"/><text x="630" y="227" font-size="11" fill="#1565c0">USER</text>
+  <rect x="710" y="212" width="50" height="22" rx="11" fill="#e8f5e9"/><text x="720" y="227" font-size="11" fill="#2e7d32">Active</text>
+  <text x="820" y="224" font-size="13" fill="#333">PLATINUM</text><text x="920" y="224" font-size="13" fill="#333">24</text>
+  <line x1="272" y1="240" x2="1152" y2="240" stroke="#eee"/>
+  <text x="290" y="264" font-size="13" fill="#333">Priya Patel</text><text x="460" y="264" font-size="13" fill="#666">priya@email.com</text>
+  <rect x="620" y="252" width="50" height="22" rx="11" fill="#fce4ec"/><text x="630" y="267" font-size="11" fill="#c62828">ADMIN</text>
+  <rect x="710" y="252" width="50" height="22" rx="11" fill="#e8f5e9"/><text x="720" y="267" font-size="11" fill="#2e7d32">Active</text>
+  <text x="820" y="264" font-size="13" fill="#333">DIAMOND</text><text x="920" y="264" font-size="13" fill="#333">56</text>
+  <line x1="272" y1="280" x2="1152" y2="280" stroke="#eee"/>
+  <text x="290" y="304" font-size="13" fill="#333">Amit Kumar</text><text x="460" y="304" font-size="13" fill="#666">amit@email.com</text>
+  <rect x="620" y="292" width="50" height="22" rx="11" fill="#e3f2fd"/><text x="630" y="307" font-size="11" fill="#1565c0">USER</text>
+  <rect x="710" y="292" width="60" height="22" rx="11" fill="#fff3e0"/><text x="720" y="307" font-size="11" fill="#e65100">Disabled</text>
+  <text x="820" y="304" font-size="13" fill="#333">GOLD</text><text x="920" y="304" font-size="13" fill="#333">8</text>
+</svg>

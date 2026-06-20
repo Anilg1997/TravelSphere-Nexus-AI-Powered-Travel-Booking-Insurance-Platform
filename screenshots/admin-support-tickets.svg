@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" font-family="Inter, sans-serif">
+  <rect width="1200" height="800" fill="#f0f2f5"/>
+  <rect x="0" y="0" width="240" height="800" fill="#1a1a2e"/>
+  <text x="24" y="40" fill="white" font-size="18" font-weight="bold">🛡 Admin Panel</text>
+  <line x1="0" y1="56" x2="240" y2="56" stroke="rgba(255,255,255,0.1)"/>
+  <rect x="12" y="72" width="216" height="40" rx="8" fill="transparent"/><text x="36" y="97" fill="rgba(255,255,255,0.7)" font-size="14">📊 Dashboard</text>
+  <rect x="12" y="120" width="216" height="40" rx="8" fill="transparent"/><text x="36" y="145" fill="rgba(255,255,255,0.7)" font-size="14">👥 Users</text>
+  <rect x="12" y="168" width="216" height="40" rx="8" fill="transparent"/><text x="36" y="193" fill="rgba(255,255,255,0.7)" font-size="14">📋 Bookings</text>
+  <rect x="12" y="216" width="216" height="40" rx="8" fill="transparent"/><text x="36" y="241" fill="rgba(255,255,255,0.7)" font-size="14">📈 Analytics</text>
+  <rect x="12" y="264" width="216" height="40" rx="8" fill="#3f51b5"/><text x="36" y="289" fill="white" font-size="14">🎫 Support</text>
+  <rect x="12" y="312" width="216" height="40" rx="8" fill="transparent"/><text x="36" y="337" fill="rgba(255,255,255,0.7)" font-size="14">⚠ Fraud Alerts</text>
+  <rect x="12" y="360" width="216" height="40" rx="8" fill="transparent"/><text x="36" y="385" fill="rgba(255,255,255,0.7)" font-size="14">🔧 System</text>
+  <text x="272" y="40" font-size="24" font-weight="bold" fill="#1a1a2e">Support Tickets</text><text x="272" y="60" font-size="12" fill="#888">Manage customer support requests</text>
+  <!-- Filters -->
+  <rect x="272" y="80" width="880" height="60" rx="12" fill="white"/>
+  <rect x="290" y="95" width="150" height="34" rx="6" fill="#f0f0f0"/><text x="300" y="116" fill="#666" font-size="13">▼ All Status</text>
+  <rect x="460" y="95" width="150" height="34" rx="6" fill="#f0f0f0"/><text x="470" y="116" fill="#666" font-size="13">▼ Priority</text>
+  <rect x="630" y="95" width="150" height="34" rx="6" fill="#f0f0f0"/><text x="640" y="116" fill="#666" font-size="13">▼ Category</text>
+  <rect x="880" y="88" width="120" height="40" rx="20" fill="#3f51b5"/><text x="908" y="112" fill="white" font-size="13" font-weight="bold">+ New Ticket</text>
+  <!-- Ticket List -->
+  <rect x="272" y="155" width="880" height="90" rx="12" fill="white"/>
+  <rect x="276" y="155" width="4" height="90" rx="2" fill="#c62828"/>
+  <rect x="295" y="168" width="70" height="22" rx="11" fill="#ffebee"/><text x="305" y="183" font-size="11" fill="#c62828">Critical</text>
+  <rect x="375" y="168" width="60" height="22" rx="11" fill="#fff3e0"/><text x="383" y="183" font-size="11" fill="#e65100">Pending</text>
+  <text x="295" y="218" font-size="13" font-weight="bold" fill="#333">Payment failure - urgent refund needed</text>
+  <text x="700" y="183" font-size="12" fill="#666">Rahul Sharma</text>
+  <text x="700" y="205" font-size="11" fill="#999">2h ago · Payment</text>
+  <rect x="900" y="180" width="120" height="34" rx="17" fill="#3f51b5"/><text x="925" y="202" fill="white" font-size="12" font-weight="bold">Assign</text>
+  <rect x="1030" y="180" width="100" height="34" rx="17" fill="#e8f5e9"/><text x="1050" y="202" fill="#2e7d32" font-size="12">Resolve</text>
+  <line x1="272" y1="245" x2="1152" y2="245" stroke="#eee"/>
+  <rect x="272" y="250" width="880" height="90" rx="12" fill="white"/>
+  <rect x="276" y="250" width="4" height="90" rx="2" fill="#e65100"/>
+  <rect x="295" y="263" width="50" height="22" rx="11" fill="#fff3e0"/><text x="303" y="278" font-size="11" fill="#e65100">High</text>
+  <rect x="355" y="263" width="60" height="22" rx="11" fill="#e3f2fd"/><text x="363" y="278" font-size="11" fill="#1565c0">Open</text>
+  <text x="295" y="313" font-size="13" font-weight="bold" fill="#333">Flight cancellation - rebook options</text>
+  <text x="700" y="278" font-size="12" fill="#666">Priya Patel</text>
+  <text x="700" y="300" font-size="11" fill="#999">5h ago · Flight</text>
+  <rect x="900" y="275" width="120" height="34" rx="17" fill="#3f51b5"/><text x="925" y="297" fill="white" font-size="12" font-weight="bold">Assign</text>
+  <rect x="1030" y="275" width="100" height="34" rx="17" fill="#e8f5e9"/><text x="1050" y="297" fill="#2e7d32" font-size="12">Resolve</text>
+  <line x1="272" y1="340" x2="1152" y2="340" stroke="#eee"/>
+  <rect x="272" y="345" width="880" height="90" rx="12" fill="white"/>
+  <rect x="276" y="345" width="4" height="90" rx="2" fill="#2196f3"/>
+  <rect x="295" y="358" width="60" height="22" rx="11" fill="#e3f2fd"/><text x="303" y="373" font-size="11" fill="#1565c0">Low</text>
+  <rect x="365" y="358" width="60" height="22" rx="11" fill="#e8f5e9"/><text x="373" y="373" font-size="11" fill="#2e7d32">In Progress</text>
+  <text x="295" y="408" font-size="13" font-weight="bold" fill="#333">Add family member to insurance policy</text>
+  <text x="700" y="373" font-size="12" fill="#666">Amit Kumar</text>
+  <text x="700" y="395" font-size="11" fill="#999">1d ago · Insurance</text>
+  <rect x="900" y="380" width="120" height="34" rx="17" fill="#3f51b5"/><text x="925" y="402" fill="white" font-size="12" font-weight="bold">Assign</text>
+  <rect x="1030" y="380" width="100" height="34" rx="17" fill="#e8f5e9"/><text x="1050" y="402" fill="#2e7d32" font-size="12">Resolve</text>
+</svg>

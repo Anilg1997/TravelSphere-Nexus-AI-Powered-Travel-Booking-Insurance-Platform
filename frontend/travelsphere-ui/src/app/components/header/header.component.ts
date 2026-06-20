@@ -60,6 +60,10 @@ import { Router } from '@angular/router';
                 <mat-icon>account_balance_wallet</mat-icon> Wallet
               </button>
               <mat-divider></mat-divider>
+              <button mat-menu-item routerLink="/admin">
+                <mat-icon>shield</mat-icon> Admin Panel
+              </button>
+              <mat-divider></mat-divider>
               <button mat-menu-item (click)="logout()">
                 <mat-icon>logout</mat-icon> Logout
               </button>
@@ -75,52 +79,18 @@ import { Router } from '@angular/router';
     </mat-toolbar>
   `,
   styles: [`
-    .app-header {
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.12);
-      height: 64px;
-    }
-    .header-container {
-      display: flex;
-      align-items: center;
-      width: 100%;
-      max-width: 1280px;
-      margin: 0 auto;
-      gap: 16px;
-    }
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      text-decoration: none;
-      color: white;
-      font-weight: 700;
-      font-size: 1.3rem;
-    }
+    .app-header { position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 8px rgba(0,0,0,0.12); height: 64px; background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%) !important; }
+    .header-container { display: flex; align-items: center; width: 100%; max-width: 1280px; margin: 0 auto; gap: 16px; }
+    .brand { display: flex; align-items: center; gap: 8px; text-decoration: none; color: white; font-weight: 700; font-size: 1.3rem; }
     .brand-text { white-space: nowrap; }
-    .nav-links {
-      display: flex;
-      gap: 4px;
-      flex: 1;
-      justify-content: center;
-    }
+    .nav-links { display: flex; gap: 4px; flex: 1; justify-content: center; }
     .nav-links a { color: rgba(255,255,255,0.9); font-weight: 500; }
     .nav-links a:hover { color: white; background: rgba(255,255,255,0.1); }
     .active-link { color: white !important; background: rgba(255,255,255,0.15) !important; }
-    .header-actions {
-      display: flex;
-      align-items: center;
-      gap: 4px;
-    }
+    .header-actions { display: flex; align-items: center; gap: 4px; }
     .login-btn { color: white !important; border: 1px solid rgba(255,255,255,0.5) !important; margin-right: 8px; }
     .register-btn { background: white !important; color: var(--primary) !important; }
-
-    @media (max-width: 768px) {
-      .nav-links { display: none; }
-      .brand-text { display: none; }
-    }
+    @media (max-width: 768px) { .nav-links { display: none; } .brand-text { display: none; } }
   `]
 })
 export class HeaderComponent {

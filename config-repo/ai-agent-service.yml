@@ -27,6 +27,7 @@ spring:
       group-id: ai-agent-service-group
     topic:
       query-logged: ts.ai.query-logged
+      document-ingested: ts.ai.document-ingested
   ai:
     ollama:
       base-url: ${OLLAMA_BASE_URL:http://localhost:11434}
@@ -34,7 +35,7 @@ spring:
         model: ${OLLAMA_CHAT_MODEL:llama3.2}
         options:
           temperature: 0.7
-          num-predict: 1024
+          num-predict: 2048
       embedding:
         model: ${OLLAMA_EMBEDDING_MODEL:nomic-embed-text}
 
@@ -51,3 +52,8 @@ app:
     min-score: 0.7
   chat:
     max-history: 10
+  mcp:
+    enabled: true
+    server:
+      name: travelsphere-mcp-server
+      version: 1.0.0

@@ -12,4 +12,14 @@ public class KafkaConfig {
     public NewTopic fraudAlertTopic() {
         return TopicBuilder.name("ts.admin.fraud-alert").partitions(3).replicas(1).build();
     }
+
+    @Bean
+    public NewTopic contentUpdatedTopic() {
+        return TopicBuilder.name("ts.admin.content-updated").partitions(3).replicas(1).build();
+    }
+
+    @Bean
+    public NewTopic auditLogTopic() {
+        return TopicBuilder.name("ts.admin.audit-log").partitions(3).replicas(1).build();
+    }
 }

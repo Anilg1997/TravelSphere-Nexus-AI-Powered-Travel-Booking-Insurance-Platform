@@ -15,6 +15,9 @@ public class DashboardResponse {
     private double totalRevenue;
     private long activeBookings;
     private long openFraudAlerts;
+    private long openSupportTickets;
+    private long todayBookings;
+    private double revenueToday;
     private long totalFlights;
     private long totalHotels;
     private long totalPackages;

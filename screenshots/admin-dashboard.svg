@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" font-family="Inter, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#1a1a2e"/><stop offset="100%" style="stop-color:#16213e"/></linearGradient>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#667eea"/><stop offset="100%" style="stop-color:#764ba2"/></linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="#f0f2f5"/>
+  <!-- Sidebar -->
+  <rect x="0" y="0" width="240" height="800" fill="#1a1a2e"/>
+  <text x="24" y="40" fill="white" font-size="18" font-weight="bold">🛡 Admin Panel</text>
+  <line x1="0" y1="56" x2="240" y2="56" stroke="rgba(255,255,255,0.1)"/>
+  <rect x="12" y="72" width="216" height="40" rx="8" fill="#3f51b5"/><text x="36" y="97" fill="white" font-size="14">📊 Dashboard</text>
+  <rect x="12" y="120" width="216" height="40" rx="8" fill="transparent"/><text x="36" y="145" fill="rgba(255,255,255,0.7)" font-size="14">👥 Users</text>
+  <rect x="12" y="168" width="216" height="40" rx="8" fill="transparent"/><text x="36" y="193" fill="rgba(255,255,255,0.7)" font-size="14">📋 Bookings</text>
+  <rect x="12" y="216" width="216" height="40" rx="8" fill="transparent"/><text x="36" y="241" fill="rgba(255,255,255,0.7)" font-size="14">📈 Analytics</text>
+  <rect x="12" y="264" width="216" height="40" rx="8" fill="transparent"/<text x="36" y="289" fill="rgba(255,255,255,0.7)" font-size="14">🎫 Support</text>
+  <rect x="12" y="312" width="216" height="40" rx="8" fill="transparent"/><text x="36" y="337" fill="rgba(255,255,255,0.7)" font-size="14">⚠ Fraud Alerts</text>
+  <rect x="12" y="360" width="216" height="40" rx="8" fill="transparent"/><text x="36" y="385" fill="rgba(255,255,255,0.7)" font-size="14">🔧 System</text>
+  <!-- Main Content -->
+  <text x="272" y="40" font-size="24" font-weight="bold" fill="#1a1a2e">Dashboard</text>
+  <text x="272" y="60" font-size="12" fill="#888">Last updated: Today, 10:30 AM</text>
+  <!-- Stats Cards -->
+  <rect x="272" y="80" width="200" height="100" rx="12" fill="white" opacity="0.9"/>
+  <circle cx="300" cy="120" r="24" fill="#e3f2fd"/><text x="290" y="126" fill="#1565c0" font-size="20">👥</text>
+  <text x="340" y="115" font-size="28" font-weight="bold" fill="#1a1a2e">12,847</text>
+  <text x="340" y="135" font-size="12" fill="#888">Total Users</text>
+
+  <rect x="492" y="80" width="200" height="100" rx="12" fill="white" opacity="0.9"/>
+  <circle cx="520" cy="120" r="24" fill="#e8f5e9"/><text x="510" y="126" fill="#2e7d32" font-size="20">📋</text>
+  <text x="560" y="115" font-size="28" font-weight="bold" fill="#1a1a2e">3,291</text>
+  <text x="560" y="135" font-size="12" fill="#888">Total Bookings</text>
+  <text x="560" y="150" font-size="10" fill="#4caf50">+42 today</text>
+
+  <rect x="712" y="80" width="200" height="100" rx="12" fill="white" opacity="0.9"/>
+  <circle cx="740" cy="120" r="24" fill="#fff3e0"/><text x="730" y="126" fill="#e65100" font-size="20">💰</text>
+  <text x="780" y="115" font-size="28" font-weight="bold" fill="#1a1a2e">₹1.2Cr</text>
+  <text x="780" y="135" font-size="12" fill="#888">Total Revenue</text>
+
+  <rect x="932" y="80" width="200" height="100" rx="12" fill="white" opacity="0.9"/>
+  <circle cx="960" cy="120" r="24" fill="#f3e5f5"/><text x="950" y="126" fill="#7b1fa2" font-size="20">✈</text>
+  <text x="1000" y="115" font-size="28" font-weight="bold" fill="#1a1a2e">156</text>
+  <text x="1000" y="135" font-size="12" fill="#888">Active Bookings</text>
+
+  <!-- Second Row Stats -->
+  <rect x="272" y="200" width="200" height="90" rx="12" fill="white" opacity="0.9"/>
+  <text x="300" y="235" font-size="24" font-weight="bold" fill="#1a1a2e">1,247</text><text x="300" y="255" font-size="12" fill="#888">Flight Bookings</text>
+  <rect x="492" y="200" width="200" height="90" rx="12" fill="white" opacity="0.9"/>
+  <text x="520" y="235" font-size="24" font-weight="bold" fill="#1a1a2e">986</text><text x="520" y="255" font-size="12" fill="#888">Hotel Bookings</text>
+  <rect x="712" y="200" width="200" height="90" rx="12" fill="white" opacity="0.9"/>
+  <text x="740" y="235" font-size="24" font-weight="bold" fill="#1a1a2e">8</text><text x="740" y="255" font-size="12" fill="#888">Open Fraud Alerts</text>
+  <rect x="932" y="200" width="200" height="90" rx="12" fill="white" opacity="0.9"/>
+  <text x="960" y="235" font-size="24" font-weight="bold" fill="#1a1a2e">23</text><text x="960" y="255" font-size="12" fill="#888">Open Tickets</text>
+
+  <!-- Quick Actions -->
+  <text x="272" y="330" font-size="16" font-weight="bold" fill="#1a1a2e">Quick Actions</text>
+  <rect x="272" y="345" width="140" height="36" rx="18" fill="#3f51b5"/><text x="300" y="368" fill="white" font-size="12" font-weight="bold">👥 Manage Users</text>
+  <rect x="424" y="345" width="140" height="36" rx="18" fill="#ff4081"/><text x="454" y="368" fill="white" font-size="12" font-weight="bold">📋 View Bookings</text>
+  <rect x="576" y="345" width="150" height="36" rx="18" fill="#f44336"/><text x="604" y="368" fill="white" font-size="12" font-weight="bold">⚠ Review Alerts</text>
+  <rect x="738" y="345" width="130" height="36" rx="18" fill="#4caf50"/><text x="768" y="368" fill="white" font-size="12" font-weight="bold">📈 Analytics</text>
+
+  <!-- Revenue Chart -->
+  <rect x="272" y="400" width="450" height="350" rx="12" fill="white"/>
+  <text x="300" y="430" font-size="14" font-weight="bold" fill="#1a1a2e">Revenue Overview (Last 7 Days)</text>
+  <text x="300" y="450" font-size="11" fill="#888">Total: ₹2,45,000</text>
+  <polyline points="320,680 370,620 420,640 470,550 520,580 570,480 620,500" fill="none" stroke="#3f51b5" stroke-width="3"/>
+  <circle cx="320" cy="680" r="4" fill="#3f51b5"/><circle cx="370" cy="620" r="4" fill="#3f51b5"/>
+  <circle cx="420" cy="640" r="4" fill="#3f51b5"/><circle cx="470" cy="550" r="4" fill="#3f51b5"/>
+  <circle cx="520" cy="580" r="4" fill="#3f51b5"/><circle cx="570" cy="480" r="4" fill="#3f51b5"/>
+  <circle cx="620" cy="500" r="4" fill="#3f51b5"/>
+
+  <!-- Service Distribution -->
+  <rect x="742" y="400" width="390" height="350" rx="12" fill="white"/>
+  <text x="770" y="430" font-size="14" font-weight="bold" fill="#1a1a2e">Service Distribution</text>
+  <rect x="770" y="460" width="330" height="28" rx="14" fill="#f0f0f0"/>
+  <rect x="770" y="460" width="130" height="28" rx="14" fill="#3f51b5"/><text x="920" y="478" fill="#333" font-size="11">✈ Flights: 38%</text>
+  <rect x="770" y="500" width="330" height="28" rx="14" fill="#f0f0f0"/>
+  <rect x="770" y="500" width="100" height="28" rx="14" fill="#ff4081"/><text x="920" y="518" fill="#333" font-size="11">🏨 Hotels: 30%</text>
+  <rect x="770" y="540" width="330" height="28" rx="14" fill="#f0f0f0"/>
+  <rect x="770" y="540" width="70" height="28" rx="14" fill="#4caf50"/><text x="920" y="558" fill="#333" font-size="11">🚗 Cars: 15%</text>
+  <rect x="770" y="580" width="330" height="28" rx="14" fill="#f0f0f0"/>
+  <rect x="770" y="580" width="50" height="28" rx="14" fill="#ff9800"/><text x="920" y="598" fill="#333" font-size="11">🛡 Insurance: 12%</text>
+  <rect x="770" y="620" width="330" height="28" rx="14" fill="#f0f0f0"/>
+  <rect x="770" y="620" width="40" height="28" rx="14" fill="#9c27b0"/><text x="920" y="638" fill="#333" font-size="11">🎁 Packages: 5%</text>
+</svg>

@@ -27,3 +27,5 @@ spring:
       group-id: admin-service-group
     topic:
       fraud-alert: ts.admin.fraud-alert
+      content-updated: ts.admin.content-updated
+      audit-log: ts.admin.audit-log

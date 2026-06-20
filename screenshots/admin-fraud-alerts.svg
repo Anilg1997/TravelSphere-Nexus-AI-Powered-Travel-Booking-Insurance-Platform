@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" font-family="Inter, sans-serif">
+  <rect width="1200" height="800" fill="#f0f2f5"/>
+  <rect x="0" y="0" width="240" height="800" fill="#1a1a2e"/>
+  <text x="24" y="40" fill="white" font-size="18" font-weight="bold">🛡 Admin Panel</text>
+  <line x1="0" y1="56" x2="240" y2="56" stroke="rgba(255,255,255,0.1)"/>
+  <rect x="12" y="72" width="216" height="40" rx="8" fill="transparent"/><text x="36" y="97" fill="rgba(255,255,255,0.7)" font-size="14">📊 Dashboard</text>
+  <rect x="12" y="120" width="216" height="40" rx="8" fill="transparent"/><text x="36" y="145" fill="rgba(255,255,255,0.7)" font-size="14">👥 Users</text>
+  <rect x="12" y="168" width="216" height="40" rx="8" fill="transparent"/><text x="36" y="193" fill="rgba(255,255,255,0.7)" font-size="14">📋 Bookings</text>
+  <rect x="12" y="216" width="216" height="40" rx="8" fill="transparent"/><text x="36" y="241" fill="rgba(255,255,255,0.7)" font-size="14">📈 Analytics</text>
+  <rect x="12" y="264" width="216" height="40" rx="8" fill="transparent"/><text x="36" y="289" fill="rgba(255,255,255,0.7)" font-size="14">🎫 Support</text>
+  <rect x="12" y="312" width="216" height="40" rx="8" fill="#3f51b5"/><text x="36" y="337" fill="white" font-size="14">⚠ Fraud Alerts</text>
+  <rect x="12" y="360" width="216" height="40" rx="8" fill="transparent"/><text x="36" y="385" fill="rgba(255,255,255,0.7)" font-size="14">🔧 System</text>
+  <text x="272" y="40" font-size="24" font-weight="bold" fill="#1a1a2e">Fraud Alerts</text><text x="272" y="60" font-size="12" fill="#888">Detect and investigate suspicious activity</text>
+  <!-- Summary Cards -->
+  <rect x="272" y="80" width="210" height="80" rx="12" fill="white"/>
+  <circle cx="300" cy="115" r="16" fill="#ffebee"/><text x="295" y="121" fill="#c62828" font-size="16">⚠</text>
+  <text x="330" y="112" font-size="24" font-weight="bold" fill="#c62828">3</text><text x="330" y="132" font-size="11" fill="#888">Critical</text>
+  <rect x="498" y="80" width="210" height="80" rx="12" fill="white"/>
+  <circle cx="526" cy="115" r="16" fill="#fff3e0"/><text x="521" y="121" fill="#e65100" font-size="16">⚡</text>
+  <text x="556" y="112" font-size="24" font-weight="bold" fill="#e65100">7</text><text x="556" y="132" font-size="11" fill="#888">High</text>
+  <rect x="724" y="80" width="210" height="80" rx="12" fill="white"/>
+  <circle cx="752" cy="115" r="16" fill="#fff8e1"/><text x="747" y="121" fill="#f9a825" font-size="16">!</text>
+  <text x="782" y="112" font-size="24" font-weight="bold" fill="#f9a825">12</text><text x="782" y="132" font-size="11" fill="#888">Medium</text>
+  <rect x="950" y="80" width="202" height="80" rx="12" fill="white"/>
+  <circle cx="978" cy="115" r="16" fill="#e8f5e9"/><text x="973" y="121" fill="#2e7d32" font-size="16">✓</text>
+  <text x="1008" y="112" font-size="24" font-weight="bold" fill="#2e7d32">18</text><text x="1008" y="132" font-size="11" fill="#888">Resolved</text>
+  <!-- Alert List -->
+  <rect x="272" y="175" width="880" height="80" rx="12" fill="white"/>
+  <rect x="276" y="175" width="4" height="80" rx="2" fill="#c62828"/>
+  <rect x="295" y="188" width="60" height="22" rx="11" fill="#ffebee"/><text x="305" y="203" font-size="11" fill="#c62828">Critical</text>
+  <text x="370" y="203" font-size="13" font-weight="bold" fill="#333">Multiple Failed Payments</text>
+  <text x="370" y="223" font-size="12" fill="#666">User #8172 attempted 12 payments in 5 minutes</text>
+  <text x="370" y="241" font-size="11" fill="#999">7 min ago · IP: 103.x.x.45</text>
+  <rect x="830" y="210" width="100" height="34" rx="17" fill="#3f51b5"/><text x="855" y="232" fill="white" font-size="12" font-weight="bold">Investigate</text>
+  <rect x="940" y="210" width="80" height="34" rx="17" fill="#e0e0e0"/><text x="960" y="232" fill="#555" font-size="12">Dismiss</text>
+  <line x1="272" y1="255" x2="1152" y2="255" stroke="#eee"/>
+  <rect x="272" y="260" width="880" height="80" rx="12" fill="white"/>
+  <rect x="276" y="260" width="4" height="80" rx="2" fill="#e65100"/>
+  <rect x="295" y="273" width="50" height="22" rx="11" fill="#fff3e0"/><text x="303" y="288" font-size="11" fill="#e65100">High</text>
+  <text x="370" y="288" font-size="13" font-weight="bold" fill="#333">Suspicious Login Location</text>
+  <text x="370" y="308" font-size="12" fill="#666">User #4531 logged in from 3 different countries in 1 hour</text>
+  <text x="370" y="326" font-size="11" fill="#999">15 min ago · IP: 78.x.x.12</text>
+  <rect x="830" y="295" width="100" height="34" rx="17" fill="#3f51b5"/><text x="855" y="317" fill="white" font-size="12" font-weight="bold">Investigate</text>
+  <rect x="940" y="295" width="80" height="34" rx="17" fill="#e0e0e0"/><text x="960" y="317" fill="#555" font-size="12">Dismiss</text>
+  <line x1="272" y1="340" x2="1152" y2="340" stroke="#eee"/>
+  <rect x="272" y="345" width="880" height="80" rx="12" fill="white"/>
+  <rect x="276" y="345" width="4" height="80" rx="2" fill="#f9a825"/>
+  <rect x="295" y="358" width="60" height="22" rx="11" fill="#fff8e1"/><text x="305" y="373" font-size="11" fill="#f9a825">Medium</text>
+  <text x="370" y="378" font-size="13" font-weight="bold" fill="#333">Rapid Booking Cancellation</text>
+  <text x="370" y="398" font-size="12" fill="#666">User #2211 booked and cancelled 8 flights in 30 min</text>
+  <text x="370" y="416" font-size="11" fill="#999">1h ago · Device: Unknown</text>
+  <rect x="830" y="380" width="100" height="34" rx="17" fill="#3f51b5"/><text x="855" y="402" fill="white" font-size="12" font-weight="bold">Investigate</text>
+  <rect x="940" y="380" width="80" height="34" rx="17" fill="#e0e0e0"/><text x="960" y="402" fill="#555" font-size="12">Dismiss</text>
+</svg>
